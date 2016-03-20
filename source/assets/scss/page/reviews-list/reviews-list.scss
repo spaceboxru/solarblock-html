@@ -1,0 +1,174 @@
+
+.reviews-list {
+	&__anons {
+		&,
+		& p {
+			color: $gray-color;
+			font-size: rem-calc( 30px );
+			line-height: 1.5;
+			@extend .font-helveticaneue-thin;
+		}
+		& {
+			margin-bottom: rem-calc( 46px );
+			p {
+				margin-bottom: 0px;
+			}
+		}
+	}
+	&__item {
+		padding-bottom: rem-calc( 30px );
+		margin-bottom: rem-calc( 30px );
+		border-bottom: 1px dashed #d4dbdd;
+		&-text {
+			background: #ebf1f4;
+			padding: rem-calc( 25px 30px );
+			position: relative;
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 0px;
+				height: 0px;				
+				right: -28px;
+				top: 15px;
+				border-style: solid;
+				border-color: transparent transparent transparent #ebf1f4;
+				border-width: 8px 14px;
+			}
+			&,
+			& p {
+				margin: 0px;
+				font-size: rem-calc( 18px );
+				@extend .font-helveticaneue-light;
+			}
+			& {
+				margin-right: rem-calc( 30px );
+			}
+			& p {
+				margin-bottom: 0px;
+			}
+		}
+		&-author {
+			position: relative;
+			padding-left: rem-calc( 80px );
+			&-img {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				overflow: hidden;
+				&,
+				& img {
+					display: block;
+				}
+				& img {
+					min-height: 100%;
+					min-width: 100%;
+					width: auto;
+				}
+			}
+			&-name {
+				display: block;
+				font-size: rem-calc( 14px );
+				line-height: 1.1;
+				color: $base-color;
+				@extend .font-helveticaneue-medium;
+				margin-bottom: rem-calc( 8px );
+			}
+			&-post {
+				display: block;
+				color: $ltgray-color;
+				font-size: rem-calc( 13px );
+				line-height: 1.40;
+				max-width: rem-calc( 190px );
+				margin-bottom: 0px;
+				span {
+					display: block;
+					&:last-child {
+						margin-top: rem-calc( 6px );
+					}
+					&:first-child {
+						margin-top: 0px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* [Mob Top Menu] */
+@include breakpoint(medium down) {
+	
+	.reviews-list {
+		&__anons {
+			padding: rem-calc( 14px 0px );
+			&,
+			& p {
+				font-size: rem-calc( 23px );
+				@extend .font-helveticaneue-thin;
+				line-height: 1.25;
+			}
+			& {
+				margin-bottom: rem-calc( 20px );
+				p {
+					margin-bottom: 0px;
+				}
+			}
+		}
+		&__item {
+			border-bottom: 0px none;
+			padding-bottom: 0px;
+			margin-bottom: 0px;
+			&:last-child {
+				border-bottom: 1px dashed #ccc;
+				margin-bottom: rem-calc( 20px );
+			}
+			&-author {
+				margin: rem-calc( 24px 0px 33px );
+				&-name {
+					margin-bottom: rem-calc( 1px );
+					font-size: rem-calc( 15px );
+					line-height: 1.50;
+				}
+				&-post {
+					font-size: rem-calc( 13px );
+					line-height: 1.50;
+					span {
+						&,
+						&:last-child {
+							margin-top: 0px;
+						}
+					}
+				}
+				&-img {
+					width: 30px;
+					height: 30px;
+					margin: rem-calc( 5px 0px 0px 20px );
+				}
+			}
+			&-text {
+				background: #ebf1f4;
+				padding: rem-calc( 20px 20px 23px );
+				margin: rem-calc( 0px -20px );
+				position: relative;
+				&:after {
+					@include sprite($reviews-clients-angle);
+					width: 21px;
+					height: 24px;
+					top: auto;
+					right: auto;
+					bottom: -24px;
+					left: 87px;
+					border: 0px none;
+				}
+				&,
+				& p {
+					font-size: rem-calc( 15px );
+				}
+			}
+		}
+	}
+
+}

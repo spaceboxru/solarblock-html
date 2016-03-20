@@ -1,0 +1,189 @@
+.catalog-item {
+	&__title {
+		font-size: rem-calc( 42px );
+		line-height: 1.2;
+		@extend .font-helveticaneue-medium;
+		margin-bottom: rem-calc( 15px );
+	}
+	&__code {
+		font-size: rem-calc( 18px );
+		@extend .font-helveticaneue-light;
+		line-height: 1.1;
+		display: block;
+		margin-bottom: rem-calc(36px);
+	}
+	&__price {
+		font-size: rem-calc( 42px );
+		@extend .font-helveticaneue-bold;
+		line-height: 1.1;
+		display: block;
+		margin-bottom: rem-calc( 20px );
+		.rub {
+			font-weight: 700;
+			margin-left: rem-calc( 10px );
+		}
+		&-block {
+			margin-bottom: rem-calc( 40px );
+		}
+	}
+	&__button {
+		background: $blue;
+		height: 60px;
+		width: 100%;
+		padding-top: rem-calc( 17px );
+		padding-bottom: rem-calc( 17px );
+		margin: 0px 0px;
+		font-size: rem-calc( 25px );
+		@extend .font-helveticaneue-medium;
+		border-radius: 7px;
+		&:hover,
+		&:focus {
+			background: lighten( $blue, 5% );
+		}
+		&:active {
+			background: darken( $blue, 10% );
+		}
+	}
+	&__props {
+		margin-bottom: rem-calc( 31px );
+		.catalog-item__prop {
+			width: 30%;
+			float: left;
+			font-size: rem-calc( 13px );
+			color: $ltgray-color;
+			.decorate {
+				background: #fff;
+				display: inline-block;
+				padding-right: rem-calc( 3px );
+				position: relative;
+				z-index: 10;				
+			}
+		}
+		.catalog-item__value {
+			background: #fff;
+			position: relative;
+			width: 70%;
+			float: left;
+			font-size: rem-calc( 14px );
+			font-weight: 400;
+			@extend .font-helveticaneue-medium;
+			padding-left: rem-calc( 3px );
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				border-top: 1px dashed #c2cdd0;
+				height: 1px;
+				width: 95px;
+				left: -96px;
+				bottom: 2px;
+				z-index: 1;
+			}
+		}
+		&-line {
+			margin-bottom: rem-calc( 15px );
+			@extend .clearfix;
+			line-height: 1.1;
+		}
+	}
+	&__service {
+		margin-bottom: rem-calc( 29px );
+		&:last-child {
+			margin-bottom: rem-calc( 34px );
+		}
+		&-title {
+			display: block;
+			font-size: rem-calc( 18px );
+			@extend .font-helveticaneue-light;
+			line-height: 1.1;
+			margin-bottom: rem-calc( 10px );
+		}
+		p {
+			font-size: rem-calc( 14px );
+			line-height: 1.55;
+			margin-bottom: 0px;
+		}
+	}
+}
+
+/* [Mob Top Menu] */
+@include breakpoint(medium down) {
+
+	.catalog-item {
+		&__price-block,
+		&__props,
+		&__service {
+			max-width: 280px;
+		}	
+		&__code {
+			font-size: rem-calc( 11px );
+			padding: rem-calc( 0px );
+			margin-bottom: rem-calc( 10px );
+		}
+		&__title {
+			font-size: rem-calc( 22px );
+			display: block;
+			border-bottom: 1px dashed #ccc;
+			padding-bottom: rem-calc( 15px );
+			margin-bottom: rem-calc( 15px );
+		}
+		&__props {
+			&-line {
+				overflow: hidden;
+				margin-bottom: rem-calc( 8px );
+			}
+			.catalog-item__prop {
+				font-size: rem-calc( 11px );
+				.decorate {
+					padding-bottom: rem-calc( 4px );
+					margin-top: rem-calc( 2px );
+				}
+			}
+			.catalog-item__value {
+				font-size: rem-calc( 16px );
+			}			
+		}
+		&__price {
+			font-size: rem-calc( 26px );
+			margin-bottom: 0px;
+			&-title {
+				display: block;
+				line-height: 1.1;
+				font-size: rem-calc( 11px );
+				color: $midgray-color;
+			}
+			&-block {
+				padding-bottom: rem-calc( 15px );
+				margin-bottom: rem-calc( 20px );
+				border-bottom: 1px dashed #ccc;
+			}
+		}
+		&__service {
+			font-size: rem-calc( 11px );
+			border-top: 1px dashed #ccc;
+			padding-top: rem-calc( 16px );
+			margin-bottom: rem-calc( 14px );
+			&:last-child {
+				margin-bottom: 0px;				
+			}
+			&-title {
+				font-size: rem-calc( 16px );
+				margin-bottom: rem-calc( 3px );
+			}
+			p {
+				margin-bottom: 0px;
+			}
+		}
+		&__button {
+			height: 38px;
+			padding: rem-calc( 8px 0px );
+			font-size: rem-calc( 16px );
+			max-width: 160px;
+			float: right;
+		}
+		&__custom-select {
+			max-width: 76px;
+		}
+	}
+
+}

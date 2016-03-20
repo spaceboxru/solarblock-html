@@ -1,0 +1,632 @@
+.icons {
+	
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	
+	&:after {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		z-index: 100;
+	}
+
+	&--green {
+		background-color: #00bb50;
+	}
+
+	&--yellow {
+		background-color: #ffb400;
+	}
+
+	&--marine {
+		background-color: #00b4b7;
+	}
+
+	&--red {
+		background-color: #ff5612;
+	}
+
+	&.icons--svg {
+		color: #aab7bc;
+		position: relative;
+		&:after {
+			background: transparent;
+		}		
+		svg {
+			fill: currentColor;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			/*height: 100%;*/
+		}
+	}
+
+	&--blue {
+		background-color: #00b9ee;
+		&:before {
+			content: "";
+			background-color: #00c6ff;
+			display: block;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			bottom: 50%;
+			left: 0px;
+		}
+	}
+
+	&--lens {
+		&:after {
+			@include sprite($lens);
+		}
+		&:hover {
+			&:after {
+				@include sprite($lens-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($lens-hover);
+			}
+		}
+	}
+
+	&--ordering {
+		&:after {
+			@include sprite($ordering);
+		}
+	}
+
+	&--advantages {
+		&:after {
+			@include sprite($advantages);
+		}
+	}
+
+	&--best-film {
+		&:after {
+			@include sprite($best-film);
+		}
+	}
+
+	&--retail-installation {
+		&:after {
+			@include sprite($retail-installation);
+		}
+	}
+
+	&--professional-installers {
+		&:after {
+			@include sprite($professional-installers);
+		}
+	}
+
+	&--any-form-payment {
+		&:after {
+			@include sprite($any-form-payment);
+		}
+	}
+
+	&--free-shipping {
+		&:after {
+			@include sprite($free-shipping);
+		}
+	}
+
+	&--certificates-warranty {
+		&:after {
+			@include sprite($certificates-warranty);
+		}
+	}
+
+	&--help-choosing {
+		&:after {
+			@include sprite($help-choosing);
+		}
+	}
+
+	&--arrow-left {
+		&:after {
+			@include sprite($arrow-left);
+		}
+		&:hover {
+			&:after {
+				@include sprite($arrow-left-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($arrow-left-hover);
+			}
+		}
+	}
+
+	&--arrow-right {
+		&:after {
+			@include sprite($arrow-right);
+		}
+		&:hover {
+			&:after {
+				@include sprite($arrow-right-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($arrow-right-hover);
+			}
+		}
+	}
+
+	&--customer-reviews {
+		&:after {
+			@include sprite($customer-reviews);
+		}
+	}
+
+	&--reviews-angle {
+		&:after {
+			@include sprite($reviews-angle);
+		}
+	}
+
+	&--spacebox-logo {
+		&:after {
+			@include sprite($spacebox-logo);
+		}
+	}
+
+	&--spacebox-logo-sm {
+		&:after {
+			@include sprite($spacebox-logo-sm);
+		}
+	}
+
+	&--testimonial-arrow-right {
+		&:after {
+			@include sprite($testimonial-arrow-right);
+		}
+		&:hover {
+			&:after {
+				@include sprite($testimonial-arrow-right-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($testimonial-arrow-right-hover);
+			}
+		}
+	}
+
+	&--testimonial-arrow-left {
+		&:after {
+			@include sprite($testimonial-arrow-left);
+		}
+		&:hover {
+			&:after {
+				@include sprite($testimonial-arrow-left-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($testimonial-arrow-left-hover);
+			}
+		}
+	}
+
+	&--testimonial-round {
+		&:after {
+			@include sprite($testimonial-round);
+		}
+		&:hover {
+			&:after {
+				@include sprite($testimonial-round-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($testimonial-round-active);
+			}
+		}
+	}
+
+	&--reviews-clients-angle {
+		&:after {
+			@include sprite($reviews-clients-angle);
+		}
+	}
+
+	&--share-link {
+		&:after {
+			@include sprite($share-link);
+		}
+		&:hover {
+			&:after {
+				@include sprite($share-link-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($share-link-hover);
+			}
+		}
+	}
+
+	&--return-link {
+		&:after {
+			@include sprite($return-link);
+		}
+		&:hover {
+			&:after {
+				@include sprite($return-link-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($return-link-hover);
+			}
+		}
+	}
+
+	&--catalog-protective-films {
+		&:after {
+			@include sprite($catalog-protective-films);
+		}	
+	}
+
+	&--catalog-sunscreen-films {
+		&:after {
+			@include sprite($catalog-sunscreen-films);
+		}	
+	}
+
+	&--catalog-decorative-films {
+		&:after {
+			@include sprite($catalog-decorative-films);
+		}	
+	}
+
+	&--catalog-heat-reflective-films {
+		&:after {
+			@include sprite($catalog-heat-reflective-films);
+		}	
+	}
+
+	&--catalog-slr-films {
+		&:after {
+			@include sprite($catalog-slr-films);
+		}	
+	}
+
+	&--catalog-protective-films-sm {
+		&:after {
+			@include sprite($catalog-protective-films-sm);
+		}	
+	}
+
+	&--catalog-sunscreen-films-sm {
+		&:after {
+			@include sprite($catalog-sunscreen-films-sm);
+		}	
+	}
+
+	&--catalog-decorative-films-sm {
+		&:after {
+			@include sprite($catalog-decorative-films-sm);
+		}	
+	}
+
+	&--catalog-heat-reflective-films-sm {
+		&:after {
+			@include sprite($catalog-heat-reflective-films-sm);
+		}	
+	}
+
+	&--catalog-slr-films-sm {
+		&:after {
+			@include sprite($catalog-slr-films-sm);
+		}	
+	}
+
+	&--question {
+		background-color: #b2d1f0;
+		width: 14px;
+		height: 15px;
+		line-height: 14px;
+		border-radius: 2px;
+		text-align: center;
+		cursor: pointer;
+		margin-top: rem-calc( -2px );
+		margin-left: rem-calc( 2px );
+		margin-right: rem-calc( 2px );
+		&:hover {
+			background-color: $red;
+		}
+		&:after {
+			@include sprite($question);
+		}
+	}
+
+	&--close {
+		&:after {
+			@include sprite($close);
+		}
+		&:hover {
+			&:after {
+				@include sprite($close-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($close-hover);
+			}
+		}
+	}
+
+	&--view-list-sm {
+		&:after {
+			@include sprite($view-list-sm);
+		}
+		&:hover {
+			&:after {
+				@include sprite($view-list-sm-hover);
+			}
+		}
+		&.active,
+		&:active {
+			&:after {
+				@include sprite($view-list-sm-active);
+			}
+		}
+	}
+	
+	&--view-list {
+		&:after {
+			@include sprite($view-list);
+		}
+		&:hover {
+			&:after {
+				@include sprite($view-list-hover);
+			}
+		}
+		&.active,
+		&:active {
+			&:after {
+				@include sprite($view-list-active);
+			}
+		}
+	}
+	
+	&--view-table {
+		&:after {
+			@include sprite($view-table);
+		}
+		&:hover {
+			&:after {
+				@include sprite($view-table-hover);
+			}
+		}
+		&.active,
+		&:active {
+			&:after {
+				@include sprite($view-table-active);
+			}
+		}
+	}
+
+	&--select {
+		&:after {
+			@include sprite($select);
+		}
+		&:hover {
+			&:after {
+				@include sprite($select-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($select-hover);
+			}
+		}
+	}
+
+	&--select-big {
+		&:after {
+			@include sprite($select-big);
+		}
+		&:hover {
+			&:after {
+				@include sprite($select-big-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($select-big-hover);
+			}
+		}
+	}
+
+	&--menu-arrow {
+		&:after {
+			@include sprite($menu-arrow);
+		}
+	}
+
+	&--full-screen-arrow-left {
+		&:after {
+			@include sprite($full-screen-arrow-left);
+		}
+		&:hover {
+			&:after {
+				@include sprite($full-screen-arrow-left-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($full-screen-arrow-left-hover);
+			}
+		}
+	}
+
+	&--full-screen-arrow-right {
+		&:after {
+			@include sprite($full-screen-arrow-right);
+		}
+		&:hover {
+			&:after {
+				@include sprite($full-screen-arrow-right-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($full-screen-arrow-right-hover);
+			}
+		}
+	}
+
+	&--close-white {
+		&:after {
+			@include sprite($close-white);
+		}
+	}
+
+	&--soon-possible {
+		&:after {
+			@include sprite($soon-possible);
+		}
+	}
+
+	&--high-altitude {
+		&:after {
+			@include sprite($high-altitude);
+		}
+	}
+
+	&--large-surface {
+		&:after {
+			@include sprite($large-surface);
+		}
+	}
+
+	&--dashed-angle {
+		&:after {
+			@include sprite($dashed-angle);
+		}
+	}
+
+	&--pagination-arrow-right {
+		&:after {
+			@include sprite($pagination-arrow-right);
+		}
+		&:hover {
+			&:after {
+				@include sprite($pagination-arrow-right-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($pagination-arrow-right-hover);
+			}
+		}
+		&.unactive {
+			&:after {
+				@include sprite($pagination-arrow-right-unactive);
+			}
+		}
+	}
+
+	&--pagination-arrow-left {
+		&:after {
+			@include sprite($pagination-arrow-left);
+		}
+		&:hover {
+			&:after {
+				@include sprite($pagination-arrow-left-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($pagination-arrow-left-hover);
+			}
+		}
+		&.unactive {
+			&:after {
+				@include sprite($pagination-arrow-left-unactive);
+			}
+		}
+	}
+
+	&--basket {
+		&:after {
+			@include sprite($basket);
+		}
+		&:hover {
+			&:after {
+				@include sprite($basket-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($basket-hover);
+			}
+		}
+	}
+
+	&--refresh {
+		&:after {
+			@include sprite($refresh);
+		}
+		&:hover {
+			&:after {
+				@include sprite($refresh-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($refresh-hover);
+			}
+		}
+	}
+
+	&--clock {
+		&:after {
+			@include sprite($clock);
+		}
+	}
+
+	&--mob-menu-close {
+		&:after {
+			@include sprite($mob-menu-close);
+		}
+	}
+
+	&--mob-menu-open {
+		&:after {
+			@include sprite($mob-menu-open);
+		}
+	}
+
+	&--mob-search {
+		&:after {
+			@include sprite($mob-search);
+		}
+	}
+
+	&--to-catalog {
+		&:after {
+			@include sprite($to-catalog);
+		}
+		&:hover {
+			&:after {
+				@include sprite($to-catalog-hover);
+			}
+		}
+		&:active {
+			&:after {
+				@include sprite($to-catalog-hover);
+			}
+		}
+	}
+
+}

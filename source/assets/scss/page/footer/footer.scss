@@ -1,0 +1,114 @@
+
+.footer {
+	&__top {
+		padding-top: rem-calc(75px);
+		&--border {
+			border-top: 5px solid #eef1f2;
+			padding-top: rem-calc(55px);
+			margin-top: rem-calc(15px);
+		}		
+	}
+	&__btm {
+		padding-top: rem-calc(55px);
+		padding-bottom: rem-calc(75px);
+		&,
+		& a {
+			font-size: rem-calc(12px);
+			color: $ltgray-color;
+		}
+		& a {
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		p {
+			line-height: 1.25;
+		}
+	}
+}
+.site-dev {
+	display: block;
+	position: relative;
+	padding-left: 57px;
+	.icons {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	&__title {
+		display: inline-block;
+		padding-top: 5px;
+	}
+}
+
+/* [Mob Top Menu] */
+@include breakpoint(medium down) {
+
+	.footer {
+		&__top {
+			padding: rem-calc( 0px 0px );
+			&--border {
+				border: 0px none;
+			}
+		}
+		&__btm {
+			padding: rem-calc( 0px 0px );
+
+			& .footer__btm-phone {
+				background: $blue;
+				border-radius: 6px;
+				font-size: rem-calc( 25px );
+				line-height: 1.1;
+				@extend .font-helveticaneue-thin;
+				color: #fff;
+				display: block;
+				text-align: center;
+				text-decoration: none;
+				padding: rem-calc( 31px 0px );
+				&:hover {
+					border-bottom-color: transparent;
+				}
+				strong {
+					@extend .font-helveticaneue-bold;
+				}
+				.decorate {
+					border-bottom: 1px solid;
+					display: inline-block;
+					line-height: 1.1;
+				}
+				&:hover {
+					.decorate {
+						border-bottom-color: transparent;
+					}
+				}
+			}
+			& .footer__btm-copyright {
+				display: block;
+				padding: rem-calc( 37px 0px );
+				font-size: rem-calc( 13px );
+				@extend .font-helveticaneue-light;
+				line-height: 1.1;
+				color: $gray-color;
+				text-align: center;
+			}
+			.site-dev {
+				background: #eef3f5;
+				margin: rem-calc( 0px -20px );
+				padding: rem-calc( 14px 20px);
+				text-align: center;
+				&__title,
+				&__href {
+					font-size: rem-calc( 13px );
+					@extend .font-helveticaneue-light;					
+				}
+				.icons {
+					position: relative;
+					margin: rem-calc( 0px 8px );
+				}
+			}	
+
+		}
+	}
+
+}

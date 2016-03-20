@@ -1,0 +1,147 @@
+
+.header {
+	padding-top: rem-calc(38px);
+	margin-bottom: rem-calc(38px);
+	#logo {
+		&,
+		img {
+			display: block;
+		}
+	}
+	.sticker__order {
+		margin-top: -38px;
+	}
+	& &__search {
+		position: relative;
+		@include placeholder {
+		    color: $ltgray-color;
+			font-weight:100;
+		}
+		&-input {
+			background-color: #fcfcfc;
+			color: $ltgray-color;
+			font-size: 12px;
+			height: 30px;
+			border-radius: 15px;
+			padding: 6px 6px 6px 32px;
+			margin-left: -10px;
+			margin-right: -10px;
+			border-color: #d9d9d9 #e2e2e2 #e5e5e5;
+			position: relative;
+			z-index: 10;
+		}
+		&-btn {
+			position: absolute;
+			z-index: 20;
+			top: 7px;
+			left: 0px;
+		}
+	}
+	&__phone {
+		color: $midgray-color;
+		font-size: rem-calc(16px);
+		line-height: 1.1;
+		margin-bottom: 18px;
+		color: #777;
+		strong {
+			color: #000;
+		}
+	}
+}
+
+/* [Mob Top Menu] */
+@include breakpoint(medium down) {
+	
+	.header {
+		padding-top: 0px;
+		margin-bottom: 0px;
+	}
+	.mobtop {
+		&-logo {
+			padding: rem-calc( 20px 0px );
+			&,
+			& img {
+				display: block;
+				margin-right: auto;
+			}
+		}
+		&__btn {
+			&-group {
+				position: relative;
+			}
+			&-btn {
+				&:not(:last-child) {
+					display: block;
+					width: 100%;
+					padding-right: 46px;
+				}
+				&:last-child {
+					width: 46px;
+					overflow: hidden;
+					position: absolute;
+					top: 0px;
+					right: 0px;
+					bottom: 0px;					
+				}
+			}
+		}
+	}
+
+	.mobphone {
+		background: transparent url(../img/mobile/index-bg.png) no-repeat 50% 0%;
+		background-size: cover;
+		margin-left: rem-calc( -20px );
+		margin-right: rem-calc( -20px );
+		color: $gray-color;
+		font-size: rem-calc( 22px );
+		@extend .font-helveticaneue-thin;
+		color: $gray-color;
+		text-align: center;
+		padding: rem-calc( 32px 20px 40px );
+		.hline {
+			height: 4px;
+			margin: rem-calc( 32px 0px 0px );
+		}
+		&,
+		& p {
+			line-height: 1.30;
+		}
+		&__text {
+			text-align: left;
+			max-width: rem-calc( 280px );
+			margin-left: auto;
+			margin-right: auto;
+			p {
+				margin: 0px;
+			}
+			a {
+				text-decoration: none;
+				strong {
+					@extend .font-helveticaneue-medium;
+					border-bottom: 1px solid;
+				}
+				&:hover {
+					strong {
+						border-bottom-color: transparent;
+					}
+				}
+			}
+			}
+		&__phone {
+			padding: rem-calc( 15x 0px 0px );
+			font-size: rem-calc( 34px );
+			@extend .font-helveticaneue-thin;
+			border-bottom: 1px dashed;
+			text-decoration: none;
+			line-height: 1.1;
+			display: inline-block;
+			&:hover {
+				border-bottom-color: transparent;
+			}
+			strong {
+				@extend .font-helveticaneue-bold;
+			}
+		}
+	}
+
+}

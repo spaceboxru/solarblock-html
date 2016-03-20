@@ -1,0 +1,164 @@
+
+<hr class="hline hline--fill-50 m-b-35" />
+
+<!-- [Order] -->
+<div class="page order">
+	<div class="row">
+		<div class="small-48 columns">
+
+			<h1 class="order__title">
+				оформление заказа
+			</h1>
+			
+			<form action="">
+				<div class="order__anons">
+
+					<p>
+						При оформлении заказа вы можете выбрать материалы и услуги,
+						которые вам нужно или просто указать контактные данные и тогда
+						все детали заказа сможет уточнить наш менеджер
+					</p>
+
+				</div>
+
+				<hr class="hline m-t-40 m-b-45" />
+				
+				<h2 class="order__table-name m-b-10">
+					Материалы:
+				</h2>
+				
+				<div class="m-b-50">
+					<p>
+						Определенная позиция не выбрана
+					</p>
+				</div>
+				
+			</form>
+
+			<hr class="hline m-t-25 m-b-45" />
+			
+			<h2 class="order__list-name m-b-30">
+				Услуги:
+			</h2>
+
+			<div class="order__list m-b-30">
+				<div class="row order__list-item">
+					<div class="small-2 columns">
+						<input id="order-list-1" name="order-list" type="checkbox" checked="checked" />
+					</div>
+					<div class="small-46 columns">
+						<label for="order-list-1" class="order__list-label">
+							Бесплатный выезд мастера для замера
+							<span>
+								Бесплатный выезд мастера для замера и демонстрации каталога пленок	
+							</span>
+						</label>
+					</div>
+				</div>
+				<div class="row order__list-item">
+					<div class="small-2 columns">
+						<input id="order-list-2" name="order-list" type="checkbox" />
+					</div>
+					<div class="small-46 columns">
+						<label for="order-list-2" class="order__list-label">
+							Монтаж пленки
+							<span>
+								Детали монтажа вы сможете оговорить с нашим менеджером, который назовет вам окончательную стоимость работ. Стоимость монтажа пленки от 300 a за квадратный метр.
+							</span>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="order__form">
+				<h2 class="order__form-title">
+					Контактные данные:
+				</h2>
+				<span class="order__form-comment">
+					<span class="star">*</span> отмеченные поля обязательные для заполнения
+				</span>
+				<div class="row order__form-line">
+					<div class="small-6 columns">
+						<label for="name">
+							Ваше имя <span class="star">*</span>
+						</label>
+					</div>
+					<div class="small-26 columns">
+						<input id="name" name="name" type="text" />
+					</div>
+					<div class="small-6 columns">
+						&nbsp;
+					</div>
+				</div>
+				<div class="row order__form-line">
+					<div class="small-6 columns">
+						<label for="phone">
+							Телефон <span class="star">*</span>
+						</label>
+					</div>
+					<div class="small-10 columns">
+						<input id="phone" name="phone" type="text" />
+					</div>
+					<div class="small-6 columns">
+						<label class="text-center" for="name">
+							Email
+						</label>
+					</div>
+					<div class="small-20 left columns">
+						<input id="name" name="name" type="email" />
+					</div>
+					<div class="small-6 columns">
+						&nbsp;
+					</div>
+				</div>
+				<div class="row order__form-line">
+					<div class="small-6 columns">
+						<label for="name">
+							Адрес
+						</label>
+					</div>
+					<div class="small-36 columns">
+						<textarea class="textarea textarea--sm" name="" id="" cols="30" rows="2">Астраханская область, Икрянинский район, с. Икряное, ул. Комсомольская, 42, квартира 71</textarea>
+						<p class="order__form-comment order__form-comment--line">
+							Введите адрес доставки, или проведения работ.
+							<br />
+							Например: г. Москва, пос. Нахабино, ул. Комсомольская, 54, кв. 7
+						</p>
+					</div>
+					<div class="small-6 columns">
+						&nbsp;
+					</div>
+				</div>
+				<div class="row order__form-line">
+					<div class="small-6 columns">
+						<label for="name">
+							Комментарий
+							<br />
+							к заказу <span class="star">*</span>
+						</label>
+					</div>
+					<div class="small-36 columns">
+						<textarea class="textarea textarea--big" name="" id="" cols="30" rows="2"></textarea>
+					</div>
+					<div class="small-6 columns">
+						&nbsp;
+					</div>
+				</div>
+			</div>
+
+			<div class="row order__buttons p-t-60 p-b-60">
+				<div class="small-17 columns p-t-15">
+					{{> back-to}}
+				</div>
+				<div class="small-14 columns text-center">
+					<button type="submit" class="button">Оформить заказ</button>
+				</div>
+				<div class="small-17 columns">
+					&nbsp;
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- [/Order] -->

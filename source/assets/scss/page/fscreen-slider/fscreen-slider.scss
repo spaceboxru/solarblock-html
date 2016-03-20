@@ -1,0 +1,446 @@
+
+.fscreen {
+	position: relative;
+	ul,
+	ul>li {
+		list-style-type: none;
+		margin: 0px 0px;
+		padding: 0px 0px;
+	}
+	&-thumbs {
+		position: absolute;
+		top: 0px;
+		right: -10px;
+		float: left;
+		overflow: hidden;
+		ul {
+			li {
+				position: relative;
+				width: 60px;
+				height: 60px;
+				clear: left;
+				float: left;
+				margin: 0px 10px 10px 0px;
+				&:after {
+					content: "";
+					display: block;
+					cursor: pointer;
+					position: absolute;
+					top: 0px;
+					right: 0px;
+					bottom: 0px;
+					left: 0px;
+					border: 2px solid #eef1f2;
+					transition: border 0.2s ease-out;
+				}
+				&.active:after,
+				&:hover:after {
+					border-width: 4px;
+				}
+				a {
+					display: block;
+				    width: 36px;
+					height: 36px;
+					margin: 12px 12px;
+				}
+			}
+		}
+	}
+	&-slider,
+	&-slider ul,
+	&-thumbs {
+		height: 480px;
+	}
+	&-slider,
+	&-slider ul {
+		width: 520px;
+	}
+	&-slider {
+		position: relative;
+		&-inner {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			left: 0px;
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				border: 1px solid #eef1f2;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				left: 0px;
+				z-index: 1;
+			}
+			&>ul {
+				position: relative;
+				padding-bottom: 480px;
+			}
+			&>ul {
+				overflow: hidden;
+				&>li {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0px;
+					a {
+						background-size: contain;
+						background-position: 50% 50%;
+						background-repeat: no-repeat;
+						display: block;
+						width: 100%;
+						height: 100%;
+						cursor: default;
+					}
+				}
+			}
+		}
+		&-title {
+			position: relative;
+			width: 100%;
+			display: none;
+			&>ul {
+				&,
+				&>li {
+					position: absolute;
+					width: 100%;					
+				}
+				&>li {
+					&.active {
+						position: relative;
+					}
+				}
+			}			
+		}
+	}
+	&-prev-btn,
+	&-next-btn {
+		background: rgba(0,0,0,0.2);
+		position: absolute;
+		width: 40px;
+		height: 80px;
+		top: 50%;
+		margin-top: -40px;
+		transition: background 0.4s;
+		z-index: 10;
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			border-style: solid;
+			width: 20px;
+			height: 20px;
+			top: 50%;
+			left: 50%;
+			margin-top: -12px;
+		}
+		&:hover {
+			background: rgba(0,0,0,0.65);
+		}
+	}
+	&-prev-btn {
+		border-radius: 0px 6px 6px 0px;
+		left: 1px;
+		&:after {
+			border-width: 0px 0px 2px 2px;
+			border-color: transparent transparent #fff #fff;
+			transform: rotate(45deg);
+			left: 14px;
+		}
+	}
+	&-next-btn {
+		border-radius: 6px 0px 0px 6px;
+		right: 1px;
+		&:after {
+			border-width: 2px 2px 0px 0px;
+			border-color: #fff #fff transparent transparent;
+			transform: rotate(45deg);
+			left: 6px;
+		}
+	}
+	&-fullscreen {
+		background-color: #fff;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index: 10;
+		border-radius: 2px;
+		z-index: 10;
+		&:after {
+			content: "";
+			display: block;
+			@include sprite($large-surface);
+			margin: 3px 0px 0px 3px;
+			width: 32px;
+			height: 32px;
+		}
+	}
+	&-counter {
+		position: absolute;
+		display: none;
+		z-index: -1;
+		i {
+			content: "/";
+			display: inline-block;
+		}
+	}
+	&.fullscreen {
+		background: white url("../img/ultra-block-logo-sm.png") no-repeat 40px 40px;
+		position: fixed;
+		padding: 0px;
+		margin: 0px;
+		top: 0px;
+		left: 0px;
+		bottom: 0px;
+		right: 0px;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		overflow-x: auto;
+		overflow-y: auto;
+		z-index: 999;
+		.fscreen {
+			&-thumbs {
+				display: none;
+			}
+			&-slider,
+			&-slider-inner {
+				width: 100%;
+				max-width: 950px;
+				margin: auto;
+			}
+			&-slider {
+				height: 100%;
+				&:before {
+					content: "";
+					display: inline-block;
+					vertical-align: middle;
+					height: 100%;
+				}
+				ul,
+				ul>li {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			&-slider-title {
+				position: fixed;
+				display: block;
+				top: 0px;
+				right: 0px;
+				left: 0px;
+				color: $ltgray-color;
+				@extend .font-helveticaneue-thin;
+				font-size: rem-calc( 36px );
+				line-height: 1.1;
+				font-weight: 400;
+				ul {
+					width: 100%;
+					position: relative;
+					max-width: 950px;
+					margin: 39px auto 0px;
+					text-align: center;
+					&>li {
+						line-height: 1.1;
+					}
+				}
+			}
+			&-slider-inner {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				&>ul {
+					padding-bottom: 70%;
+				}
+			}
+			&-fullscreen {
+				background-color: $blue;
+				position: fixed;
+				width: 38px;
+				height: 38px;
+				border-radius: 0px;
+				border: 0px none;
+				top: 40px;
+				right: 58px;
+				&:after {
+					@include sprite($close-white);
+					margin: 11px 0px 0px 11px;
+				}
+				&:hover,
+				&:focus {
+					background-color: lighten( $blue, 5% );
+				}
+				&:active {
+					background-color: darken( $blue, 10% );
+				}
+			}
+			&-counter {
+				position: fixed;
+				display: block;
+				color: $ltgray-color;
+				top: 39px;
+				right: 112px;
+				@extend .font-helveticaneue-thin;
+				font-size: rem-calc( 36px );
+				line-height: 1.1;
+				font-weight: 400;
+				opacity: 1.0;
+				z-index: 333;
+				transition: opacity 0.0s;
+				i {
+					&:after {
+						content: "/";
+						display: inline-block;
+						vertical-align: middle;
+						padding: 0px 10px;
+					}
+				}
+			}
+			&-prev-btn,
+			&-next-btn {
+				background: transparent;
+				position: fixed;
+				width: 16px;
+				height: 39px;
+				transition: all 0s ease 0s;
+				overflow: visible;
+				&:after {
+					transform: rotate(0deg);
+					border: 0px none;
+					top: 0px;
+					left: 0px;
+				}
+			}
+			&-prev-btn {
+				left: 50px;
+				&:after {
+					@include sprite($full-screen-arrow-left);
+					margin-top: 0px;
+				}
+				&:hover {
+					&:after {
+						@include sprite($full-screen-arrow-left-hover);
+					}
+				}
+				&:active {
+					&:after {
+						@include sprite($full-screen-arrow-left-hover);
+					}
+				}
+			}
+			&-next-btn {
+				right: 50px;
+				&:after {
+					@include sprite($full-screen-arrow-right);
+					margin-top: 0px;
+				}
+				&:hover {
+					&:after {
+						@include sprite($full-screen-arrow-right-hover);
+					}
+				}
+				&:active {
+					&:after {
+						@include sprite($full-screen-arrow-right-hover);
+					}
+				}
+			}
+		}
+	}
+}
+
+/* [Mob Top Menu] */
+@include breakpoint(medium down) {
+	.fscreen {
+		padding-bottom: 70px;
+		margin-bottom: 20px;
+		border-bottom: 1px dashed #ccc;
+		&.fullscreen {
+			background-position: 10px 10px;
+			.fscreen-prev-btn {
+				left: 20px;
+				right: auto;
+			}
+			.fscreen-next-btn {
+				left: auto;
+				right: 20px;
+			}
+			.fscreen-counter {
+				top: 18px;
+				right: 58px;
+				font-size: 22px;
+			}
+			.fscreen-fullscreen {
+				top: 10px;
+				right: 10px;
+			}
+			.fscreen-slider-title {
+				ul {
+					width: auto;
+					margin: 18px 120px 0px 100px;
+					li {
+						font-size: 22px;
+					}
+				}
+			}
+		}
+		&,
+		&-slider,
+		&-slider ul {
+			width: 280px;
+		}
+		&-thumbs {
+			width: 30px;
+			height: 280px;
+			right: auto;
+			left: 130px;
+			bottom: auto;
+			top: 145px;
+			transform: rotate(-90deg);
+			&-inner {
+				
+				ul {
+					li {
+						width: 30px;
+						height: 30px;
+						a {
+							margin: 6px 6px;
+							width: 18px;
+							height: 18px;
+							transform: rotate(90deg);
+						}
+						&:after {
+							border-width: 1px;
+						}
+						&:hover,
+						&.active {
+							&:after {
+								border-width: 2px;
+							}
+						}
+					}
+				}
+			}
+		}
+		&-slider,
+		&-slider ul {
+			height: 250px;
+		}
+		.fscreen-slider-inner {
+			&> ul {
+				padding-bottom: 250px;
+				&> li {
+					a {
+						background-size: cover;
+					}
+				}
+			}
+		}
+		&-fullscreen {
+			top: 5px;
+			right: 5px;
+		}
+	}
+}

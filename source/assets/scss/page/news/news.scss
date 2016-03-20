@@ -1,0 +1,107 @@
+
+.news {
+	&__title {
+		@extend .h1;
+		line-height: 1.0;
+		margin-bottom: rem-calc( 34px );
+		text-transform: uppercase;
+	}
+	&__item {
+		padding-top: rem-calc( 30px );
+		padding-bottom: rem-calc( 32px );
+		border-bottom: 1px dashed #d4dbdd;
+		&:first-child,
+		&:nth-child(2) {
+			border-top: 1px dashed #d4dbdd;
+		}
+		&--no-border {
+			border-bottom: 0px none;
+		}
+		&-title {
+			&,
+			& a {
+				color: #000;
+				@extend .font-helveticaneue-thin;
+				font-size: rem-calc( 30px );
+				line-height: 1.1;				
+			}
+			& a {
+				text-decoration: none;
+				border-bottom: 1px solid;
+				&:hover {
+					border-bottom-color: transparent;
+				}
+			}
+		}
+		&-text {
+			&,
+			& p {
+				margin-bottom: 0px;
+			}
+		}
+	}
+	&__date {
+		&-day {
+			font-size: rem-calc( 36px );
+			line-height: 1.1;
+			@extend .font-helveticaneue-thin;
+			color: $ltgray-color;
+		}
+		&-year,
+		&-month {
+			font-size: rem-calc( 14px );
+			@extend .font-helveticaneue;
+			display: block;
+			color: $ltgray-color;
+		}
+		&-month {
+
+		}
+		&-year {
+			
+		}
+	}
+
+}
+
+/* [Mob Top Menu] */
+@include breakpoint(medium down) {
+	
+	.news {
+		&__date {
+			margin-bottom: rem-calc( 4px );
+			&-year,
+			&-month,
+			&-day {
+				display: inline;
+				font-size: rem-calc( 10px );
+				text-transform: uppercase;
+			}
+		}
+		& &__item {
+			padding-top: rem-calc( 10px );
+			padding-bottom: rem-calc( 16px );
+			&--first {
+				padding-top: 0px;
+				border-top: 0px none;
+			}
+			&-title {
+				margin-bottom: rem-calc( 11px );
+				&,
+				& a {
+					font-size: rem-calc( 16px );
+					vertical-align: middle;
+				}
+			}			
+			&-text {
+				&,
+				& p {
+					font-size: rem-calc( 13px );
+					line-height: 1.40;
+				}
+			}
+		}
+	}
+
+}
+

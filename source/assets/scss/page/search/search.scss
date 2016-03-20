@@ -1,0 +1,76 @@
+
+.search {
+	&__title {
+		margin-bottom: rem-calc( 25px );
+	}
+	&__form {
+		@extend .notfound__form;
+	}
+	&__form-input {
+		@extend .notfound__form-input;
+	}
+	&__form-button {
+		@extend .notfound__form-button;
+	}
+	&__form-comment {
+		@extend .notfound__form-comment, .notfound__form-comment-btmborder;
+	}
+	&__item {
+		@extend .news__item;
+	}
+	&__item--no-border {
+		@extend .news__item--no-border;
+	}
+	&__item-title {
+		@extend .news__item-title;
+	}
+	&__item-text {
+		@extend .news__item-text;
+	}
+}
+
+/* [Mob Top Menu] */
+@include breakpoint(medium down) {
+	
+	.search {
+		background: transparent url(../img/mobile/search-bg.jpg) no-repeat 50% 0%;
+		background-size: cover;
+		margin: rem-calc( 0px -20px );
+		padding: rem-calc( 34px 20px 0px );
+		&__title {
+			text-transform: uppercase;
+			font-size: rem-calc( 21px );
+			@extend .font-helveticaneue-heavy;
+			margin-bottom: rem-calc( 17px );
+		}
+		.notfound__form-input {
+			margin-bottom: rem-calc( 7px );
+		}
+		.notfound__form-comment {
+			padding-bottom: 12px;
+		}
+		&__item {
+			padding: rem-calc( 15px 0px 14px );
+			&.search__item--no-border {
+				padding-bottom: rem-calc( 4px );
+			}
+			&-title {
+				&,
+				& a {
+					font-size: rem-calc( 18px );
+					@extend .font-helveticaneue-light;
+					color: #000;
+				}
+			}
+			&-text {
+				&,
+				& p {
+					font-size: rem-calc( 13px );
+					@extend .font-helveticaneue-light;
+					color: $gray-color;
+				}
+			}
+		}
+	}
+
+}

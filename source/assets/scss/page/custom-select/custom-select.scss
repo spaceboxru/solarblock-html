@@ -1,0 +1,166 @@
+
+
+.customSelect {
+	margin-right: 0px;
+	max-width: 100%;
+	.selectValueWrap {
+		.selectedValue {
+			background: #fff;
+			text-shadow: none;
+			box-shadow: none;
+			border-width: 2px;
+			border-radius: 7px;
+			padding: rem-calc( 15px 12px 15px 18px );
+			font-size: rem-calc( 25px );
+			line-height: 1.1;
+			border: 2px solid #d6d6d6;
+			@extend .font-helveticaneue-medium;
+		}
+		.caret {
+			@include sprite($select-big);
+			width: 10px;
+			height: 19px;
+			top: 20px;
+			right: 15px;
+			border: 0px none;
+		}	
+	}
+	&.select-open {
+		.selectValueWrap {
+			.caret {
+				@include sprite($select-big-hover);
+			}
+		}
+	}
+	.selectList {
+		border-radius: 8px;
+		border: 0px none;
+		box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.08);
+		margin-top: rem-calc( 10px );
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 22px;
+			top: -18px;
+			border-width: 9px;
+			border-style: solid;
+			border-color: transparent transparent #fff;
+		}
+	}
+	.jspVerticalBar {
+		background: #fff;
+		width: 27px;
+	    padding-left: rem-calc( 15px );
+	    padding-right: rem-calc( 5px );
+	}
+	.jspDrag {
+		border-radius: 5px;
+		background: #91c3f1;
+		border-color: #91c3f1;
+	}
+	.selectListInnerWrap {
+		dd {
+			margin-left: rem-calc( 5px );
+			font-size: rem-calc( 15px );
+			padding: rem-calc( 10px 10px 10px 20px );
+			border-radius: 5px 0px 0px 5px;
+			color: $blue;
+			@extend .font-helveticaneue-medium;
+			&.selected,
+			&.hovered {
+				background: #f3f7f8;
+				color: $base-color;
+			}
+		}
+	}
+}
+
+.customSelect .selectList,
+.customSelect .selectList dl,
+.jspContainer {
+	max-width: 100%;
+	width: 100%!important;
+}
+
+.mdCustomSelect {
+	.customSelect {
+		width: 100%!important;
+		.selectValueWrap {
+			.caret {
+				@include sprite($select);
+				width: 7px;
+				height: 14px;
+				top: 13px;
+				right: 10px;
+			}
+			.selectedValue {
+				padding: rem-calc( 10px 10px 10px );
+				font-size: rem-calc( 16px );
+				border: 1px solid #d6d6d6;
+				border-radius: 4px;
+				@extend .font-helveticaneue-medium;
+			}
+		}
+		&.select-open {
+			.selectValueWrap {
+				.caret {
+					@include sprite($select-hover);
+				}
+			}
+		}
+	}
+}
+
+/* [Mob Top Menu] */
+@include breakpoint(medium down) {
+	
+	.customSelect {
+		width: 100%!important;
+		.selectValueWrap {
+			.caret {
+				@include sprite($select);
+				width: 7px;
+				height: 14px;
+				top: 13px;
+				right: 10px;
+			}
+			.selectedValue {
+				padding: rem-calc( 10px 10px 10px );
+				font-size: rem-calc( 16px );
+				border: 1px solid #d6d6d6;
+				border-radius: 4px;
+				@extend .font-helveticaneue-medium;
+			}
+		}
+		&.select-open {
+			.selectValueWrap {
+				.caret {
+					@include sprite($select-hover);
+				}
+			}
+		}
+		.selectList {
+			right: 0px;
+			dl {
+				max-width: 100%;
+			}
+			.selectListOuterWrap {
+				width: 100%!important;
+				.selectListInnerWrap {
+					width: 100%!important;
+				}
+			}
+			.jspPane {
+				width: 100%!important;
+			}
+		}
+		.selectListInnerWrap {
+			dd {
+				padding: rem-calc( 4px 4px );
+				font-size: rem-calc( 16px );
+			}
+		}
+	}
+
+}

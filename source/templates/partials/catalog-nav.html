@@ -1,0 +1,74 @@
+
+<!-- [Inner nav] -->
+<div class="page--line page--light page--overflow {{#ifpage 'catalog' 'catalog-list' 'catalog-list-sm'}}m-b-50 m-b-sm-30{{/ifpage}} {{#ifpage 'catalog-item'}}m-b-25{{/ifpage}}">
+	<div class="row columns">
+		<div class="small-48 columns">
+			
+			{{#ifpage 'catalog' 'catalog-list' 'catalog-list-sm' 'catalog-item'}}
+			<div class="catalog-nav hide-for-small show-for-large">
+				<div class="small-48 large-6 columns catalog-nav__item {{#ifpage 'about'}}catalog-nav__active{{/ifpage}}">
+					<a class="catalog-nav__title" href="catalog-item.html">
+						<span class="decorate">Защитная</span>
+					</a>
+				</div>
+				<div class="small-48 large-11 columns catalog-nav__item {{#ifpage 'reviews-list'}}catalog-nav__active{{/ifpage}}">
+					<a class="catalog-nav__title" href="catalog-item.html">
+						<span class="decorate">Солнцезащитная</span>
+					</a>
+				</div>
+				<div class="small-48 large-10 columns catalog-nav__item {{#ifpage 'delivery'}}catalog-nav__active{{/ifpage}}">
+					<a class="catalog-nav__title" href="catalog-item.html">
+						<span class="decorate">Декоративная</span>
+					</a>
+				</div>
+				<div class="small-48 large-13 columns catalog-nav__item {{#ifpage 'warranty'}}catalog-nav__active{{/ifpage}}">
+					<a class="catalog-nav__title" href="catalog-item.html">
+						<span class="decorate">Теплоотражающая</span>
+					</a>
+				</div>
+				<div class="small-48 large-8 columns catalog-nav__item {{#ifpage 'catalog-list' 'catalog-list-sm' 'catalog-item'}}catalog-nav__active{{/ifpage}}">
+					<a class="catalog-nav__title" href="catalog-item.html">
+						<span class="decorate">Зеркальная</span>
+					</a>
+				</div>
+			</div>
+			{{/ifpage}}
+			
+			{{#ifpage 'catalog-item'}}
+			<ul class="vertical menu mobcnt-menu show-for-small hide-for-large" data-accordion-menu>
+				<li>
+					<a class="mobcnt-menu__ddown" href=""></a>
+					<div class="mobcnt-menu__first-line clearfix">
+						<a class="mobcnt-menu__curr {{#ifpage 'catalog-item'}}mobcnt-menu__active{{/ifpage}}" href="{{backUrl}}"><span class="decorate">{{ title }}</span></a>
+					</div>
+					
+					<ul class="menu vertical nested mobcnt-menu__nested" style="display: none;">
+						<li>
+							<a class="mobcnt-menu__item" href="catalog-item.html">
+								<span class="decorate">Солнцезащитные пленки</span>
+							</a>
+						</li>
+						<li>
+							<a class="mobcnt-menu__item" href="catalog-item.html">
+								<span class="decorate">Декоративные пленки</span>
+							</a>
+						</li>
+						<li>
+							<a class="mobcnt-menu__item" href="catalog-item.html">
+								<span class="decorate">Теплоотражающие пленки</span>
+							</a>
+						</li>
+						<li>
+							<a class="mobcnt-menu__item" href="catalog-item.html">
+								<span class="decorate">Защитные пленка</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			{{/ifpage}}
+
+		</div>
+	</div>
+</div>
+<!-- [Inner nav] -->

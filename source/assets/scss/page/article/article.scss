@@ -1,0 +1,94 @@
+
+.article {
+	&__title {
+		font-family: "helveticaneuecyrmedium";
+		@extend .h1;
+		line-height: 1.20;
+		max-width: 70%;
+		margin-bottom: rem-calc( 23px );
+	}
+	&__anons {
+		&,
+		& p {
+			@extend .font-helveticaneue-thin;
+			font-size: rem-calc( 30px );
+			line-height: 1.50;
+			color: $gray-color;
+			margin-bottom: 0px;
+		}
+		& {
+			margin-bottom: rem-calc( 37px );
+		}
+	}
+	&__text {
+		margin: rem-calc( 0px 0px 42px );
+		&,
+		& p {
+			@extend .font-helveticaneue-light;
+			color: $gray-color;
+			font-size: rem-calc(18px);
+		}
+		& p {
+			margin-bottom: rem-calc( 17px );
+		}
+	}
+	&__figure {
+		margin: rem-calc(0px 0px 27px);
+		padding: 0px;
+		font-size: rem-calc( 14px );
+		color: $ltgray-color;
+		line-height: 1.1;
+		p {
+			margin: rem-calc( 0px 0px 15px );
+		}
+		img {
+			display: block;
+		}
+	}
+}
+
+
+/* [Mob Top Menu] */
+@include breakpoint(medium down) {
+
+	.article {
+		&__title {
+			font-size: rem-calc( 22px );
+			max-width: 100%;
+			padding: 0px;
+			margin: rem-calc( 0px 0px 16px );
+		}
+		&__anons {
+			&,
+			& p {
+				font-size: rem-calc( 15px );
+				@extend .font-helveticaneue-light;
+				margin: 0px;
+			}
+			& {
+				margin-bottom: rem-calc( 14px );
+			}
+		}
+		&__text {
+			margin: rem-calc( 0px 0px 25px );
+			& p {
+				margin: rem-calc( 0px 0px 15px );
+			}
+			&,
+			& p {
+				font-size: rem-calc( 15px );
+				@extend .font-helveticaneue-light;
+			}
+		}
+		&__figure {
+			margin: rem-calc(0px 0px 8px);
+			p {
+				margin: rem-calc( 0px 0px 7px );
+			}
+			.article__figcaption {
+				font-size: rem-calc( 11px );
+			}
+		}
+	}
+
+}

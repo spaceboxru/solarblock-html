@@ -1,0 +1,91 @@
+
+<!-- [Inner nav] -->
+<div class="page--line page--light page--overflow 
+{{#ifpage 'article'}}m-b-60 m-b-sm-30{{/ifpage}}
+{{#ifpage 'news' 'faq' 'types' 'about' 'types-article' 'reviews-list' 'sample-works'}}m-b-35 m-b-sm-15{{/ifpage}}
+{{#ifpage 'delivery'}}m-t-65 m-b-65 m-t-sm-0 m-b-sm-30{{/ifpage}}
+">
+	<div class="row columns">
+		<div class="small-48 columns">
+			
+			<div class="inner-nav hide-for-small show-for-large">
+				<div class="small-8 columns inner-nav__item {{#ifpage 'about'}}inner-nav__active{{/ifpage}}">
+					<a href="about.html">
+						О&nbsp;компании
+					</a>
+				</div>
+				<div class="small-7 columns inner-nav__item {{#ifpage 'reviews-list'}}inner-nav__active{{/ifpage}}">
+					<a href="reviews-list.html">
+						Отзывы
+					</a>
+				</div>
+				<div class="small-10 columns inner-nav__item {{#ifpage 'delivery'}}inner-nav__active{{/ifpage}}">
+					<a href="delivery.html">
+						Доставка&nbsp;и&nbsp;оплата
+					</a>
+				</div>
+				<div class="small-7 columns inner-nav__item {{#ifpage 'warranty'}}inner-nav__active{{/ifpage}}">
+					<a href="#">
+						Гарантии
+					</a>
+				</div>
+				<div class="small-8 columns inner-nav__item {{#ifpage 'news'}}inner-nav__active{{/ifpage}}">
+					<a href="news.html">
+						Новости
+					</a>
+				</div>
+				<div class="small-8 columns inner-nav__item {{#ifpage 'sample-works'}}inner-nav__active{{/ifpage}}">
+					<a href="sample-works.html">
+						Примеры&nbsp;работ
+					</a>
+				</div>
+			</div>
+			
+			{{#ifpage 'types' 'types-article'}}
+				{{#ifpage 'types'}}
+					<hr class="hline hline--mob-margin-20 hline--fill-50 hline--red m-t-sm-0 m-b-sm-25 show-for-small hide-for-large" />
+				{{/ifpage}}
+				{{#ifpage 'types-article'}}
+					<hr class="hline hline--mob-margin-20 m-t-sm-0 m-b-sm-25 show-for-small hide-for-large" />
+				{{/ifpage}}
+				<h1 class="page__delim-title show-for-small hide-for-large">
+					справка
+				</h1>
+			{{/ifpage}}
+
+			<ul class="vertical menu mobcnt-menu show-for-small hide-for-large" data-accordion-menu>
+				<li>
+					<a class="mobcnt-menu__ddown" href=""></a>
+					<div class="mobcnt-menu__first-line clearfix">
+						<a class="mobcnt-menu__curr {{#ifpage 'types-article'}}mobcnt-menu__active{{/ifpage}}" href="{{backUrl}}"><span class="decorate">{{ title }}</span></a>
+					</div>
+					
+					<ul class="menu vertical nested mobcnt-menu__nested" style="display: none;">
+						<li>
+							<a class="mobcnt-menu__item" href="catalog-item.html">
+								<span class="decorate">Солнцезащитные пленки</span>
+							</a>
+						</li>
+						<li>
+							<a class="mobcnt-menu__item" href="catalog-item.html">
+								<span class="decorate">Декоративные пленки</span>
+							</a>
+						</li>
+						<li>
+							<a class="mobcnt-menu__item" href="catalog-item.html">
+								<span class="decorate">Теплоотражающие пленки</span>
+							</a>
+						</li>
+						<li>
+							<a class="mobcnt-menu__item" href="catalog-item.html">
+								<span class="decorate">Защитные пленка</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+</div>
+<!-- [Inner nav] -->

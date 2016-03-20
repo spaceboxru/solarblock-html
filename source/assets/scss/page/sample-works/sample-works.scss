@@ -1,0 +1,100 @@
+
+.sample-works {
+	margin-bottom: rem-calc( 47px );
+	&__title {
+		font-size: rem-calc( 42px );
+		line-height: 1.1;
+		@extend .font-helveticaneue-heavy;
+		margin-bottom: rem-calc( 5px );
+		text-transform: uppercase;
+	}
+	&__count {
+		display: block;
+		font-size: rem-calc( 14px );
+		line-height: 1.1;
+		color: $midgray-color;
+		strong {
+			color: $base-color;
+		}
+	}
+	&__form {
+		&-comment {
+			font-size: rem-calc( 14px );
+			line-height: 1.1;
+			color: $midgray-color;
+			display: block;
+			padding-top: 5px;
+		}
+		&-button-more,
+		&-button {
+			background: #ebf1f4;
+			margin: 0px;
+			color: $blue;
+			&:hover,
+			&:focus {
+				background: darken( #ebf1f4, 5%);
+				color: $blue;
+			}
+			&:active {
+				background: darken( #ebf1f4, 10%);
+				color: $blue;
+			}
+		}
+		&-button-more {
+			padding: rem-calc( 22px 110px );
+		}
+	}
+
+	&__blocks {
+		@extend .mounting__blocks;
+		&-item {
+			@extend .mounting__blocks-item;
+			span.sample-works__blocks-img {
+				overflow: hidden;
+				height: 160px;
+				max-height: 160px;
+				display: block;
+			}
+		}
+		&-img {
+			@extend .mounting__blocks-img;
+		}
+		&-text {
+			@extend .mounting__blocks-text;
+		}
+	}
+
+}
+
+/* [Mob Top Menu] */
+@include breakpoint(medium down) {
+	
+	.sample-works {
+		margin-bottom: rem-calc( 20px );
+		&__count {
+			margin: rem-calc( 0px 0px 17px);
+		}
+		&__blocks {
+			@extend .mounting__blocks;
+			&-item {
+				
+			}
+			&-img {
+				width: 100%;
+				height: auto;
+			}
+			&-text {
+				background: transparent;
+				margin-left: 0px;
+				margin-right: 0px;
+				font-size: rem-calc( 15px );
+				text-align: left;
+				padding: rem-calc( 16px 0px );
+				margin-bottom: rem-calc( 20px );
+				border-bottom: 1px dashed #ccc;
+			}
+		}
+	}
+
+}
+

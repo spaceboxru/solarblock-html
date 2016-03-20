@@ -1,0 +1,598 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/~3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <header class="header page--line hide-for-small show-for-large">
+        <div class="row columns">
+        	<div class="small-8 columns">
+          		<a href="main.html" id="logo"><img src="assets/img/ultra-block-logo.png" width="148" height="98" /></a>
+          	</div>
+          	<div class="small-28 small-offset-4 columns">
+    
+    			<div class="row">
+    				<div class="small-28 columns">
+    		      		<p class="header__phone">
+    		      			+7 (495) <strong>781-23-45</strong>
+    		      		</p>
+    					<form class="header__search" action="" method="post">
+    						<input class="header__search-input" type="text" placeholder="Поиск по сайту..." /><button class="header__search-btn" type="submit"><i class="icons icons--lens"></i></button>
+    					</form>
+    				</div>
+    				<div class="small-13 small-offset-7 columns">
+    					
+    					<ul class="menu vertical header__menu-sm">
+    						<li>
+    							<a href="delivery.html">
+    								Доставка и оплата
+    							</a>
+    						</li>
+    						<li>
+    							<a href="#">
+    								Гарантии
+    							</a>
+    						</li>
+    						<li>
+    							<a href="faq.html">
+    								Справка
+    							</a>
+    						</li>
+    					</ul>					
+    
+    				</div>
+    			</div>
+    
+    		    <div class="row columns">
+    		    	<div class="small-48 columns">
+    					
+    					<div class="header__menu">
+    
+    						<div class="menu expanded header__menu-items">
+    							<div class="small-16 columns">
+    								<a href="mounting.html">
+    									Монтаж пленки
+    								</a>
+    							</div>
+    							<div class="small-16 columns">
+    								<a href="catalog.html">
+    									Каталог пленки
+    								</a>
+    							</div>
+    							<div class="small-16 columns">
+    								<a href="contacts.html">
+    									Контакты
+    								</a>
+    							</div>
+    						</div>
+    
+    					</div>
+    
+    		    	</div>
+    		    </div>
+    
+    		</div>
+    
+          	<div class="small-8 columns p-l-0">
+    
+          		<a class="sticker__order" href="">
+          			<span class="sticker__order-info clearfix">
+    					<i class="icons icons--ordering"></i>
+    					<span class="badge badge-round">5</span>
+    					<span class="sticker__order-price">на 270 000 <strong class="rub">a</strong></span>
+          			</span>
+          			<span class="sticker__order-title">
+          				Оформление
+          				<br />
+    					заказa
+          			</span>
+          		</a>
+    
+          	</div>
+    
+        </div>
+    </header>
+    
+    <!-- [For Mobile Only] -->
+    <header class="header page--line show-for-small hide-for-large">
+    	
+    	<div class="title-bar mobtop-menu" data-responsive-toggle="mobtop-menu" data-hide-for="large">
+    		<div class="row">
+    			<div class="small-8 columns">
+    				<button class="menu-icon mobtop-menu__btn js-mobtop-menu__btn" type="button" data-toggle>
+    				<i class="icons icons--svg icons--mob-menu-open">
+    					<svg viewBox="0 0 29 27">
+    						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icons_all"></use>
+    					</svg>
+    				</i>
+    				<i class="icons icons--svg icons--close-white">
+    					<svg viewBox="0 0 27 27">
+    						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icons_close"></use>
+    					</svg>
+    				</i>
+    				</button>
+    			</div>
+    			<div class="small-24 columns">
+    				<a class="mobtop-menu__phone" href="">
+    					+7 (495) 781-23-45
+    				</a>
+    			</div>
+    			<div class="small-15 columns">
+    				<a class="mobtop-menu__contacts" href="">
+    					Контакты
+    				</a>
+    			</div>
+    		</div>
+    	</div>
+    
+    	<!-- [Logo Menu] -->
+    	<div class="row mobtop-logo">
+    		<div class="small-16 columns">
+    			<a class="mobtop-logo__logo" href="">
+    				<img src="assets/img/ultra-block-logo.png" width="74" height="49" />
+    			</a>
+    		</div>
+    		<div class="small-32 columns">
+    				<button class="width-100 button mobtop-btn">Оформление заказа</button>
+    		</div>
+    	</div>
+    	<!-- [/Logo Menu] -->
+    
+    	<!-- [Drop Down Menu] -->
+    	<div class="top-bar mobtop-menu__dropdown" id="mobtop-menu" style="display: none;">
+    		<form class="mobtop-menu__form" action="">
+    			<button class="mobtop-menu__submit"><i class="icons icons--svg icons--mob-search">
+    			<svg viewBox="0 0 34 34">
+    			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icons_search"></use>
+    			</svg></i></button>
+    			<input class="mobtop-menu__search" type="text" name="search" placeholder="Поиск по сайту..." />
+    		</form>
+    		<ul class="submenu menu vertical mobtop-menu__submenu" data-submenu>
+    			<li>
+    				<a class="mobtop-menu__submenu-item" href="#">
+    					Услуги
+    				</a>
+    			</li>
+    			<li>
+    				<a class="mobtop-menu__submenu-item" href="#">
+    					Каталог пленки
+    				</a>
+    			</li>
+    			<li>
+    				<a class="mobtop-menu__submenu-item" href="#">
+    					Оформление заказа
+    				</a>
+    			</li>
+    			<li>
+    				<a class="mobtop-menu__submenu-item" href="#">
+    					Доставка и оплата
+    				</a>
+    			</li>
+    			<li>
+    				<a class="mobtop-menu__submenu-item" href="#">
+    					Гарантии
+    				</a>
+    			</li>
+    		</ul>
+    	</div>
+    	<!-- [/Drop Down Menu] -->
+    
+    
+    </header>
+    <!-- [/For Mobile Only] -->
+      
+        
+        <!-- [Inner nav] -->
+        <div class="page--line page--light page--overflow 
+        m-b-60 m-b-sm-30
+        
+        
+        ">
+        	<div class="row columns">
+        		<div class="small-48 columns">
+        			
+        			<div class="inner-nav hide-for-small show-for-large">
+        				<div class="small-8 columns inner-nav__item ">
+        					<a href="about.html">
+        						О&nbsp;компании
+        					</a>
+        				</div>
+        				<div class="small-7 columns inner-nav__item ">
+        					<a href="reviews-list.html">
+        						Отзывы
+        					</a>
+        				</div>
+        				<div class="small-10 columns inner-nav__item ">
+        					<a href="delivery.html">
+        						Доставка&nbsp;и&nbsp;оплата
+        					</a>
+        				</div>
+        				<div class="small-7 columns inner-nav__item ">
+        					<a href="#">
+        						Гарантии
+        					</a>
+        				</div>
+        				<div class="small-8 columns inner-nav__item ">
+        					<a href="news.html">
+        						Новости
+        					</a>
+        				</div>
+        				<div class="small-8 columns inner-nav__item ">
+        					<a href="sample-works.html">
+        						Примеры&nbsp;работ
+        					</a>
+        				</div>
+        			</div>
+        			
+        
+        			<ul class="vertical menu mobcnt-menu show-for-small hide-for-large" data-accordion-menu>
+        				<li>
+        					<a class="mobcnt-menu__ddown" href=""></a>
+        					<div class="mobcnt-menu__first-line clearfix">
+        						<a class="mobcnt-menu__curr " href=""><span class="decorate">Статьи</span></a>
+        					</div>
+        					
+        					<ul class="menu vertical nested mobcnt-menu__nested" style="display: none;">
+        						<li>
+        							<a class="mobcnt-menu__item" href="catalog-item.html">
+        								<span class="decorate">Солнцезащитные пленки</span>
+        							</a>
+        						</li>
+        						<li>
+        							<a class="mobcnt-menu__item" href="catalog-item.html">
+        								<span class="decorate">Декоративные пленки</span>
+        							</a>
+        						</li>
+        						<li>
+        							<a class="mobcnt-menu__item" href="catalog-item.html">
+        								<span class="decorate">Теплоотражающие пленки</span>
+        							</a>
+        						</li>
+        						<li>
+        							<a class="mobcnt-menu__item" href="catalog-item.html">
+        								<span class="decorate">Защитные пленка</span>
+        							</a>
+        						</li>
+        					</ul>
+        				</li>
+        			</ul>
+        
+        		</div>
+        	</div>
+        </div>
+        <!-- [Inner nav] -->
+        
+
+        <!-- [Breadcrumbs] -->
+        <div class="page--line hide-for-small show-for-large">
+        	<div class="row columns">
+        		<div class="small-48 columns">
+        
+              		<div class="right">
+        					<!-- [Share] -->
+        						<a class="share" href=""><i class="icons icons--share-link"></i><span>Поделиться</span></a>
+        					<!-- [/Share] -->
+        			</div>
+        			
+        			<div class="left">
+        
+        				<nav aria-label="" role="navigation">
+        					<ul class="breadcrumbs">
+        						<li><a href="#">Новости</a></li>
+        						<li><span>25 Сентября 2015</span></li>
+        					</ul>
+        				</nav>
+        
+        			</div>
+        
+        		</div>
+        	</div>
+        </div>
+        <!-- [/Breadcrumbs] -->
+
+      
+      <!-- [Article] -->
+      <div class="page--line page-overflow m-b-30 m-b-sm-5">
+      	<div class="row columns">
+      		<div class="small-48 columns">
+      			
+      			
+      			<div class="article">
+      				
+      				<h1 class="article__title">
+      					Монтаж пленки в квартирах
+      					и загородных домах
+      				</h1>
+      				
+      				<div class="row">
+      					<div class="small-48 large-44 columns">
+      
+      						<div class="article__anons">
+      							<p>
+      								Работаем с 2005 года. Специализируемся на пленках различного назначения и делаем это хорошо
+      							</p>
+      						</div>
+      
+      						<figure class="article__figure">
+      							<p>
+      								<img src="assets/img/pages-pictures/article/img-1.jpg" width="560" height="334" alt="" />
+      							</p>
+      							<figcaption class="article__figcaption">
+      								Название фотографии
+      							</figcaption>
+      						</figure>
+      
+      						<div class="article__text">
+      							<p>
+      								Министерство культуры России подготовило поправки к закону «О защите детей от информации, причиняющей вред их здоровью и развитию», который позволяет продавцам билетов в кинотеатрах
+      								и контролерам требовать паспорта у граждан, чтобы подтвердить их возраст. Документ представлен на общественное обсуждение на федеральном портале проектов нормативно-правовых актов.
+      							</p>
+      							<p>
+      								«Организатор зрелищного мероприятия, на котором демонстрируется информационная продукция, запрещенная для детей, обязан принять меры, исключающие возможность нахождения на таком мероприятии лиц младше 18 лет», — подчеркивается в законопроекте.
+      							</p>
+      							<p>
+      								Кроме того, в киноанонсах, показываемых перед детскими сеансами, согласно документу, не должно быть рекламы картин для взрослых.
+      							</p>
+      							<p>
+      								Законопроект также предлагает не считать вредной для детей информацию, которая может вызвать желание заниматься бродяжничеством и попрошайничеством. Этот пункт действующего закона вызвал критику общественности, так как под запрет попадали такие детские книги, как «Колобок», «Приключения поросенка Фунтика», «Мцыри» Михаила Лермонтова, «Белый пудель» Александра Куприна и «Дети подземелья» Владимира Короленко. Кроме того, бродягами являются герои произведений Марка Твена и многих французских авторов.
+      							</p>
+      						</div>
+      						
+      						<!-- [Back-to] -->
+      							<a class="back-to" href=""><i class="icons icons--return-link"></i><span>Вернуться в каталог</span></a>
+      						<!-- [/Back-to] -->
+      					
+      					</div>
+      				</div>
+      
+      			</div>
+      
+      		</div>
+      	</div>
+      </div>
+      <!-- [/Article] -->
+
+    <footer class="footer page--line p-t-15">
+        <div class="row columns footer__top footer__top--border">
+        	<div class="small-48 large-16 columns">
+        		<nav class="btm-nav p-r-55">
+        			<a class="btm-nav__title" href="">
+        				<span class="decorate">Услуги</span>
+        			</a>
+        			<ul class="menu vertical btm-nav__menu hide-for-small show-for-large">
+        				<li><a href="">Монтаж пленки в квартирах и загородных домах</a></li>
+        				<li><a href="">Монтаж пленки в офисах и банках</a></li>
+        				<li><a href="">Монтаж пленки в торговых центрах</a></li>
+        			</ul>
+        		</nav>
+        	</div>
+        	<div class="small-48 large-12 columns">
+        		<nav class="btm-nav p-r-55">
+        			<a class="btm-nav__title" href="">
+        				<span class="decorate">Каталог пленки</span>
+        			</a>
+        			<ul class="menu vertical btm-nav__menu hide-for-small show-for-large">
+        				<li><a href="">Защитные пленка</a></li>
+        				<li><a href="">Солнцезащитная пленка</a></li>
+        				<li><a href="">Декоративная пленка</a></li>
+        				<li><a href="">Теплоотражающие пленки</a></li>
+        				<li><a href="">Зеркальная пленка</a></li>
+        			</ul>
+        		</nav>
+        	</div>
+        	<div class="small-48 large-12 columns">
+        		<nav class="btm-nav p-r-55">
+        			<a class="btm-nav__title" href="">
+        				<span class="decorate">Оформление заказа</span>
+        			</a>
+        			<ul class="menu vertical btm-nav__menu hide-for-small show-for-large">
+        				<li><a href="">Доставка и оплата</a></li>
+        				<li><a href="">Гарантии</a></li>
+        				<li><a href="">Примеры работ</a></li>
+        			</ul>
+        		</nav>
+        	</div>
+        	<div class="small-48 large-8 columns">
+        		<nav class="btm-nav">
+        			<a class="btm-nav__title" href="">
+        				<span class="decorate">Контакты</span>
+        			</a>
+        			<ul class="menu vertical btm-nav__menu hide-for-small show-for-large">
+        				<li><a href="">О компании</a></li>
+        				<li><a href="">Отзывы</a></li>
+        				<li><a href="">Новости</a></li>
+        			</ul>
+        		</nav>
+        	</div>
+        </div>
+        <div class="row columns footer__btm">
+        	<div class="small-48 large-14 columns hide-for-small show-for-large">
+    			<p class="copyright">
+    				<span>&copy; 2010-2015</span>
+    				<br />
+    				<span>Все права защищены. <a href="">Ultrablock.ru</a></span>
+    			</p>
+        	</div>
+        	<div class="small-48 large-8 columns">
+    
+                <div class="show-for-small hide-for-large">
+                    <div class="row footer__btm-nav">
+                        <div class="small-12 columns text-left">
+                            <a href="">Гарантии</a>
+                        </div>
+                        <div class="small-25 columns text-center">
+                            <a href="">Доствка и оплата</a>
+                        </div>
+                        <div class="small-11 columns text-right">
+                            <a href="">Справка</a>
+                        </div>
+                    </div>
+    
+                    <a class="footer__btm-phone" href=""><span class="decorate">8(495) <strong>781-23-45</strong></span></a>
+                    
+                    <span class="footer__btm-copyright">
+                        &copy; 2010-2015 Ultrablock.ru
+                    </span>
+    
+                </div>
+    
+        		<p class="site-dev">
+    				<span class="site-dev__title">Разработка сайта</span>
+    				<a href="" class="site-dev__href"><i class="icons icons--spacebox-logo hide-for-small show-for-large"></i><i class="icons icons--spacebox-logo-sm show-for-small-only"></i>Spacebox</a>
+        		</p>
+    
+        	</div>
+        </div>
+    </footer>
+
+    <svg class="absolute" width="0" height="0">
+      <defs>
+      
+        <path id="icons_all" data-width="29" data-height="27" fill-rule="evenodd" clip-rule="evenodd" d="M28,0H1C0.448,0,0,0.447,0,1v3c0,0.552,0.448,1,1,1h27c0.552,0,1-0.448,1-1V1
+          C29,0.447,28.552,0,28,0z M28,11H1c-0.552,0-1,0.448-1,1v3c0,0.552,0.448,1,1,1h27c0.552,0,1-0.448,1-1v-3
+          C29,11.448,28.552,11,28,11z M28,22H1c-0.552,0-1,0.447-1,1v3c0,0.552,0.448,1,1,1h27c0.552,0,1-0.448,1-1v-3
+          C29,22.447,28.552,22,28,22z"/>
+          
+        <path id="icons_arrows" data-width="49" data-height="51" fill-rule="evenodd" clip-rule="evenodd" d="M30,51l6.576-6.576l-9.581-9.58l4.849-4.849l9.58,9.581L49,32v19H30z
+           M32.258,20.692l-4.95-4.95l9.218-9.217L30,0h19v19l-7.525-7.525L32.258,20.692z M19,51H0V32l7.427,7.427l9.648-9.556l4.93,4.883
+          l-9.673,9.578L19,51z M16.654,20.506L7.53,11.47L0,19V0h19l-6.462,6.462l9.149,9.06L16.654,20.506z"/>
+          
+        <path id="icons_back" data-width="13" data-height="25" fill-rule="evenodd" clip-rule="evenodd" d="M0,12.313L9.453,0l4.221,2.442l-7.58,10.426l7.236,9.801L9,25.169L0,12.313
+          L0,12.313z"/>
+          
+        <path id="icons_check" data-width="40" data-height="40" d="M33,0H7C3.134,0,0,3.134,0,7v26c0,3.866,3.134,7,7,7h26c3.866,0,7-3.134,7-7V7C40,3.134,36.866,0,33,0z M31.769,15.236
+          L18.013,28.788c-0.28,0.277-0.737,0.277-1.017,0l-2.034-2.022c-0.278-0.277-0.737-0.731-1.017-1.012l-4.73-4.898
+          c-0.139-0.139-0.213-0.331-0.213-0.515c0-0.183,0.074-0.357,0.212-0.497l2.073-1.839c0.141-0.142,0.328-0.211,0.514-0.21
+          c0.182,0.001,0.364,0.07,0.503,0.21l4.691,4.715c0.278,0.28,0.736,0.28,1.017,0l10.706-10.518c0.278-0.278,0.735-0.278,1.017,0
+          l2.034,2.022C32.049,14.502,32.049,14.959,31.769,15.236z"/>
+          
+        <path id="icons_clock" data-width="82" data-height="82"  fill-rule="evenodd" clip-rule="evenodd" d="M41.169,82.382C18.432,82.382,0,63.941,0,41.191C0,18.441,18.432,0,41.169,0
+          s41.169,18.441,41.169,41.191C82.338,63.941,63.906,82.382,41.169,82.382z M41.169,10.518c-16.932,0-30.657,13.733-30.657,30.675
+          c0,16.941,13.726,30.674,30.657,30.674c16.933,0,30.658-13.733,30.658-30.674C71.827,24.251,58.102,10.518,41.169,10.518z
+           M54.377,53.548L40.379,45.66c-1.012-0.585-1.475-1.739-1.244-2.823c-0.365-0.452-0.594-1.019-0.594-1.646V18.404
+          c0-1.452,1.177-2.629,2.628-2.629s2.628,1.178,2.628,2.629v22.787c0,0.117-0.02,0.228-0.034,0.341l13.242,7.461
+          c1.257,0.727,1.688,2.334,0.962,3.592C57.241,53.841,55.635,54.273,54.377,53.548z"/>
+          
+        <polygon id="icons_close" data-width="27" data-height="27" fill-rule="evenodd" clip-rule="evenodd" points="26.988,4.907 22.082,0 13.428,8.654 5.142,0.369 0.369,5.142 
+          8.654,13.427 0,22.082 4.906,26.989 13.562,18.334 21.847,26.62 26.619,21.847 18.334,13.562     "/>
+          
+        <path id="icons_delete" data-width="22" data-height="25" d="M20.692,5.209h-3.405V2.083C17.287,0.932,16.35,0,15.191,0H6.81C5.652,0,4.715,0.932,4.715,2.083v3.126H1.31
+          C0.587,5.209,0,5.791,0,6.511c0,0.718,0.587,1.302,1.31,1.302h0.786v15.104c0,1.15,0.938,2.082,2.095,2.082h13.62
+          c1.158,0,2.096-0.932,2.096-2.082V7.813h0.786c0.723,0,1.31-0.584,1.31-1.302C22.002,5.791,21.415,5.209,20.692,5.209z
+           M14.668,5.209H7.334V3.75c0-0.636,0.514-1.146,1.152-1.146h5.028c0.64,0,1.153,0.511,1.153,1.146V5.209L14.668,5.209z M7.334,8.854
+          v12.5c0,0.572-0.472,1.041-1.048,1.041s-1.048-0.469-1.048-1.041v-12.5c0-0.572,0.472-1.041,1.048-1.041S7.334,8.281,7.334,8.854z
+           M12.049,8.854v12.5c0,0.572-0.472,1.041-1.048,1.041s-1.048-0.469-1.048-1.041v-12.5c0-0.572,0.472-1.041,1.048-1.041
+          S12.049,8.281,12.049,8.854z M16.763,8.854v12.5c0,0.572-0.472,1.041-1.047,1.041c-0.576,0-1.048-0.469-1.048-1.041v-12.5
+          c0-0.572,0.472-1.041,1.048-1.041C16.291,7.813,16.763,8.281,16.763,8.854z"/>
+          
+        <path id="icons_divider" data-width="45" data-height="55" fill-rule="evenodd" clip-rule="evenodd" d="M44.802,46.722l-3.813,8.523l-6.262-9.84c-3.359,1.427-7.454,2.527-12.166,2.568
+          c0,0.001-0.001,0.011-0.001,0.011c-0.054,0-0.105-0.004-0.159-0.004c-0.037,0-0.072,0.004-0.109,0.004l-0.001-0.007
+          c-4.614-0.041-8.637-1.096-11.96-2.475l-6.199,9.742l-3.813-8.523l3.146-5.013C1.218,40.108,0,38.83,0,38.83l7.626-9.155
+          c0,0,0.816,0.804,2.238,1.833l4.663-7.432c-0.747-1.279-1.182-2.761-1.182-4.346c0-4.055,2.801-7.449,6.583-8.404l-2.134-1.855
+          V3.157L21.924,0l4.131,3.157v6.313l-2.063,1.793c3.906,0.866,6.829,4.325,6.829,8.467c0,1.251-0.271,2.438-0.751,3.512l5.092,8.116
+          c1.291-0.956,2.03-1.684,2.03-1.684l7.609,9.155c0,0-1.147,1.197-3.244,2.722L44.802,46.722z M22.423,35.982
+          c2.05-0.016,3.97-0.389,5.705-0.95l-4.321-6.791c-0.558,0.111-1.133,0.171-1.723,0.171c-0.288,0-0.571-0.016-0.852-0.043
+          l-4.284,6.732C18.624,35.621,20.462,35.967,22.423,35.982z"/>
+          
+        <path id="icons_doc" data-width="43" data-height="54" fill-rule="evenodd" clip-rule="evenodd" d="M33.564,54.203H0V0h42.718v45.019L33.564,54.203z M36.615,6.022H6.103v42.158
+          h25.02v-5.42h5.492V6.022z M10.419,25.017h21.879v2.085H10.419V25.017z M10.419,19.805h21.879v2.085H10.419V19.805z M10.419,10.424
+          h21.879v6.254H10.419V10.424z M15.562,35.533c2.528,0,4.577,2.022,4.577,4.517c0,2.495-2.049,4.518-4.577,4.518
+          s-4.577-2.022-4.577-4.518C10.984,37.556,13.034,35.533,15.562,35.533z"/>
+          
+        <path id="icons_doc1" data-width="47" data-height="51" fill-rule="evenodd" clip-rule="evenodd" d="M0,51.076V0h20.838l0,0h9.377l16.67,16.315v34.761H0z M40.634,18.676L27.09,6.254
+          v9.381c0,1.727,1.399,3.127,3.125,3.127h10.159l0.26,0.25V18.676z M40.634,25.017h-9.377c-5.754,0-10.419-4.667-10.419-10.424V6.254
+          H6.251v38.567h34.383V25.017z M15.962,25.109h2.939v14.534H15.17V30.76h-3.481v-2.607C13.92,28.091,15.67,27.507,15.962,25.109z"/>
+          
+        <path id="icons_down" data-width="25" data-height="14" fill-rule="evenodd" clip-rule="evenodd" d="M12.761,14.018L0,4.792l2.481-4.439l9.729,7.418L22.558,0l2.425,4.327
+          L12.761,14.018L12.761,14.018z"/>
+        
+        <path id="icons_forward" data-width="14" data-height="25" fill-rule="evenodd" clip-rule="evenodd" d="M13.674,12.313l-9,12.856l-4.33-2.5l7.236-9.801L0,2.442L4.221,0L13.674,12.313
+          L13.674,12.313z"/>
+        
+        <polygon id="icons_goback" data-width="21" data-height="15" fill-rule="evenodd" clip-rule="evenodd" points="21.002,5.998 5.215,5.998 7.504,1.5 6.052,0 0,7.497 6.052,14.994 
+          7.502,13.497 5.215,8.997 21.002,8.997     "/>
+        
+        <path id="icons_ok" data-width="54" data-height="54" fill-rule="evenodd" clip-rule="evenodd" d="M27.09,54.204C12.128,54.204,0,42.069,0,27.102C0,12.134,12.128,0,27.09,0
+          c6.441,0,12.35,2.259,16.999,6.015L39.1,11.006c-3.353-2.509-7.501-4.012-12.01-4.012c-11.101,0-20.099,9.002-20.099,20.108
+          c0,11.105,8.999,20.107,20.099,20.107c11.1,0,20.099-9.002,20.099-20.107c0-0.812-0.062-1.608-0.156-2.396l5.961-5.537
+          c0.767,2.51,1.186,5.171,1.186,7.933C54.179,42.069,42.051,54.204,27.09,54.204z M11.069,26.81l5.826-5.828l8.739,8.16L46.605,8.743
+          c0,0,1.754,1.319,2.913,2.914c1.171,1.61,1.748,3.497,1.748,3.497L25.633,40.798L11.069,26.81z"/>
+        
+        <path id="icons_percent" data-width="44" data-height="46" d="M37.59,5.058c0.26-0.46,0.521-1.051,0.521-1.773c0-1.84-1.433-3.284-3.257-3.284c-1.628,0-2.345,0.985-2.671,1.511
+          L6.971,40.92c-0.26,0.526-0.521,1.117-0.521,1.839c0,1.84,1.433,3.285,3.257,3.285c1.628,0,2.345-0.985,2.671-1.511L37.59,5.058z
+           M14.397,10.115c0,2.43-1.954,4.4-4.495,4.4c-2.41,0-4.365-1.971-4.365-4.4c0-2.431,1.955-4.401,4.365-4.401
+          C12.443,5.714,14.397,7.685,14.397,10.115z M19.935,10.115c0-5.518-4.56-10.05-9.967-10.05C4.495,0.065,0,4.598,0,10.115
+          c0,5.583,4.495,10.049,9.968,10.049C15.375,20.164,19.935,15.632,19.935,10.115z M30.098,35.994c0-2.431,1.955-4.467,4.495-4.467
+          c2.411,0,4.365,2.036,4.365,4.467s-1.955,4.401-4.365,4.401C32.052,40.396,30.098,38.425,30.098,35.994z M24.561,35.994
+          c0,5.518,4.56,10.05,9.967,10.05c5.472,0,9.967-4.532,9.967-10.05c0-5.583-4.495-10.05-9.967-10.05
+          C29.121,25.944,24.561,30.477,24.561,35.994z"/>
+        
+        <polygon id="icons_plus" data-width="60" data-height="60" fill-rule="evenodd" clip-rule="evenodd" points="60,21.667 38.333,21.667 38.333,0 21.666,0 21.666,21.667 0,21.667 
+          0,38.333 21.666,38.333 21.666,60 38.333,60 38.333,38.333 60,38.333    "/>
+        
+        <path id="icons_pro" data-width="54" data-height="54"   d="M17.514,21.95h-4.568v10.396h2.714v-3.475h2.292c2.16,0,3.663-1.081,3.663-3.417C21.615,22.885,19.893,21.95,17.514,21.95
+          z M17.193,26.769h-1.533v-2.6h1.751c0.949,0,1.576,0.307,1.576,1.314C18.988,26.696,18.127,26.769,17.193,26.769z M27.089,0
+          C12.128,0,0,12.134,0,27.102C0,42.07,12.128,54.204,27.089,54.204c14.961,0,27.09-12.134,27.09-27.102
+          C54.179,12.134,42.051,0,27.089,0z M27.089,47.209c-11.1,0-20.099-9.002-20.099-20.107c0-11.105,8.999-20.108,20.099-20.108
+          c11.101,0,20.099,9.002,20.099,20.108C47.188,38.207,38.19,47.209,27.089,47.209z M30.82,28.842
+          c-0.19-0.671-0.657-1.124-1.314-1.343c1.065-0.481,1.605-1.343,1.605-2.541c0-2.044-1.562-3.008-3.517-3.008H22.18v10.396h2.714
+          v-3.869h1.664c1.255,0,1.722,0.467,1.854,1.694c0.073,0.686,0.043,1.547,0.306,2.175h2.758c-0.292-0.394-0.292-0.817-0.335-1.299
+          C31.009,29.514,30.98,29.397,30.82,28.842z M26.806,26.55h-1.912v-2.497h1.883c1.124,0,1.664,0.395,1.664,1.212
+          C28.44,26.36,27.696,26.55,26.806,26.55z M36.798,21.702c-3.124,0-5.181,2.365-5.181,5.446c0,3.168,2,5.446,5.21,5.446
+          c3.152,0,5.064-2.38,5.064-5.432C41.891,23.819,39.892,21.702,36.798,21.702z M36.783,30.361c-1.503,0-2.394-1.212-2.394-3.242
+          c0-1.971,0.919-3.212,2.379-3.212s2.35,1.197,2.35,3.168C39.118,29.149,38.257,30.361,36.783,30.361z"/>
+        
+        <path id="icons_search" data-width="34" data-height="34" fill-rule="evenodd" clip-rule="evenodd" d="M33.076,33.043c-1.24,1.281-3.252,1.281-4.492,0l-2.375-2.449
+          c-1.24-1.281-1.24-3.356,0-4.636c1.24-1.28,3.252-1.28,4.492,0l2.375,2.45C34.316,29.688,34.316,31.763,33.076,33.043z
+           M14.822,30.594C6.635,30.594,0,23.744,0,15.297C0,6.849,6.635,0,14.822,0c8.186,0,14.82,6.849,14.82,15.297
+          C29.643,23.744,23.008,30.594,14.822,30.594z M14.822,6.556c-4.678,0-8.471,3.914-8.471,8.741c0,4.827,3.793,8.74,8.471,8.74
+          c4.676,0,8.469-3.913,8.469-8.74C23.291,10.469,19.498,6.556,14.822,6.556z"/>
+        
+        <path id="icons_snap" data-width="54" data-height="54" fill-rule="evenodd" clip-rule="evenodd" d="M48.123,34.242l-23.076,18.14c-5,3.93-13.442,2.138-19.264-3.684
+          C-0.039,42.876-1.832,34.434,2.1,29.434l4.881-6.21c-1.865-2.474-1.552-6.212,0.935-8.891l5.468-5.89
+          c1.973-2.125,4.772-2.981,7.217-2.491c6.574-7.82,19.133-8.156,27.609,0.32C56.837,14.899,56.354,27.771,48.123,34.242z
+           M19.566,11.384c-0.029-0.025-0.064-0.04-0.094-0.063c-0.145-0.237-0.314-0.461-0.536-0.651c-1.305-1.116-3.446-0.873-4.784,0.544
+          l-2.606,2.763c-1.337,1.417-1.363,3.47-0.059,4.587c0.028,0.025,0.063,0.04,0.094,0.063c0.146,0.236,0.314,0.46,0.536,0.65
+          c1.305,1.117,3.446,0.873,4.783-0.543l2.607-2.763C20.845,14.554,20.871,12.5,19.566,11.384z M42.913,9.578
+          c-5.328-5.333-12.555-4.198-17.86-0.423c2.376,2.438,2.236,6.544-0.442,9.43l-5.468,5.889c-2.398,2.584-5.023,3.32-7.736,1.993
+          l-3.33,4.12c-2.884,3.672-2.568,7.872,1.703,12.147c4.272,4.275,10.469,5.592,14.137,2.705L42.85,30.118
+          C48.89,25.366,49.244,15.914,42.913,9.578z"/>
+        
+        <path id="icons_time" data-width="54" data-height="55" fill-rule="evenodd" clip-rule="evenodd" d="M36.814,2.892C36.196,2.344,35.392,2,34.5,2C32.566,2,31,3.566,31,5.5
+          c0,1.565,1.035,2.876,2.453,3.323l-0.088,0.229C41.286,11.713,47,19.182,47,28c0,11.046-8.954,20-20,20S7,39.046,7,28
+          c0-0.49,0.024-0.974,0.062-1.454C7.639,25.853,8,24.973,8,24c0-2.209-1.791-4-4-4s-4,1.791-4,4c0,0.383,0.071,0.746,0.172,1.096
+          C0.064,26.05,0,27.017,0,28c0,14.911,12.088,27,27,27s27-12.089,27-27C54,16.559,46.862,6.823,36.814,2.892z M20.5,11
+          c3.037,0,5.5-2.463,5.5-5.5C26,2.462,23.537,0,20.5,0S15,2.462,15,5.5C15,8.537,17.463,11,20.5,11z M29.96,31.46
+          c1.562-1.562,1.087-4.569-1.061-6.718C26.752,22.595,8.04,9.539,8.04,9.539s13.055,18.713,15.202,20.86
+          C25.391,32.547,28.398,33.021,29.96,31.46z"/>
+        
+        <path id="icons_up" data-width="25" data-height="14" fill-rule="evenodd" clip-rule="evenodd" d="M12.761,0l12.222,9.691l-2.425,4.327L12.21,6.248l-9.729,7.418L0,9.227L12.761,0
+          L12.761,0z"/>
+        
+        <path id="icons_upanddown" data-width="14" data-height="26" fill-rule="evenodd" clip-rule="evenodd" d="M7,0L0,9.579h14L7,0z M7,26l7-9.58H0L7,26z"/>
+        
+        <path id="icons_update" data-width="29" data-height="26" d="M25.99,16.56c0.373-1.193,0.588-2.455,0.588-3.766C26.578,5.792,20.942,0.09,13.983,0v4.11
+          c4.701,0.09,8.499,3.947,8.499,8.684c0,0.657-0.084,1.292-0.225,1.907l-3.83-1.907l2.668,7.95l7.924-2.678L25.99,16.56z
+           M6.537,13.225c0-0.658,0.084-1.292,0.224-1.908l3.831,1.908L7.924,5.273L0,7.953l3.029,1.506
+          c-0.372,1.192-0.587,2.454-0.587,3.767c0,7.003,5.636,12.703,12.595,12.794v-4.109C10.336,21.82,6.537,17.962,6.537,13.225z"/>
+        
+      </defs>
+    </svg>
+    
+	<script src="assets/js/lib.js"></script>
+	<script src="assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+
+.page {
+	&--line {
+
+	}
+	&--light {
+		background: #f8fafb;
+	}
+	&--dark {
+		background: #f7f8f9;
+	}
+	&--toodark {
+		background: #eef4f6;
+	}
+	&--content {
+
+	}
+	&--overflow {
+		overflow: hidden;
+	}
+	&__title {
+		position: relative;
+		display: block;
+		padding-left: rem-calc(80px);
+		margin-bottom: rem-calc(42px);
+		font-size: rem-calc(19px);
+		@extend .font-helveticaneue-bold;
+		text-transform: uppercase;
+		max-height: 60px;
+		overflow: hidden;
+		.icons {
+			background-color: #aab7bc;
+			color: #fff;
+			width: 60px;
+			height: 60px;
+			line-height: 58px;
+			top: 0px;
+			left: 0px;
+			position: absolute;
+			text-align: center;
+			svg {
+				fill: currentColor;
+			}
+		}
+		.icons-block {
+			background-color: #aab7bc;
+			top: 0px;
+			left: 0px;
+			position: absolute;
+			width: 60px;
+			height: 60px;
+			padding: rem-calc( 12px );
+			line-height: 58px;
+			text-align: center;
+			.icons {
+				background-color: transparent;
+				width: 100%;
+				height: 100%;
+				padding: 0px;
+				margin: 0px;
+				top: auto;
+				left: auto;
+				color: #fff;
+				position: relative;
+				line-height: 1.1;
+				vertical-align: top;
+				svg {
+					fill: currentColor;
+				}
+			}			
+		}
+
+		&-text {
+			display: block;
+			position: relative;
+			top: rem-calc(-2px);
+			line-height: 1.15;
+		}
+	}
+	&__delim-title {
+		@extend .font-helveticaneue-heavy;
+		font-size: rem-calc( 42px );
+		text-transform: uppercase;
+		margin-bottom: rem-calc(25px);
+		span {
+			font-family: "helveticaneuecyrthin";
+			font-size: rem-calc( 42px );
+			margin-left: rem-calc( 37px );
+			margin-right: rem-calc( 57px );
+		}
+	}
+}
+
+/* [Mob Top Menu] */
+@include breakpoint(medium down) {
+
+	.page {
+		&--light {
+			background: transparent;
+		}
+		&--dark {
+			background: transparent;
+		}
+		&--toodark {
+			background: transparent;
+		}
+		&--line {
+			padding: rem-calc( 0px 20px );
+			margin-bottom: 0px;
+		}
+		&__title {
+			padding-left: 0px;
+			font-size: rem-calc( 16px );
+			margin-bottom: rem-calc( 20px );
+			.icons-block {
+				left: auto;
+				right: 0px;
+				width: 50px;
+				height: 50px;
+				padding: rem-calc( 10px 10px );
+			}
+		}
+		&__delim-title {
+			@extend .font-helveticaneue-heavy;
+			font-size: rem-calc( 21px );
+			text-transform: uppercase;
+			margin-bottom: rem-calc(12px);
+			span {
+				font-family: "helveticaneuecyrthin";
+				font-size: rem-calc( 42px );
+				margin-left: rem-calc( 37px );
+				margin-right: rem-calc( 57px );
+			}
+		}
+	}
+
+}

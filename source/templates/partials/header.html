@@ -1,0 +1,198 @@
+<header class="header page--line hide-for-small show-for-large">
+    <div class="row columns">
+    	<div class="small-8 columns">
+      		<a href="main.html" id="logo"><img src="assets/img/ultra-block-logo.png" width="148" height="98" /></a>
+      	</div>
+      	<div class="small-28 small-offset-4 columns">
+
+			<div class="row">
+				<div class="small-28 columns">
+		      		<p class="header__phone">
+		      			+7 (495) <strong>781-23-45</strong>
+		      		</p>
+					<form class="header__search" action="" method="post">
+						<input class="header__search-input" type="text" placeholder="Поиск по сайту..." /><button class="header__search-btn" type="submit"><i class="icons icons--lens"></i></button>
+					</form>
+				</div>
+				<div class="small-13 small-offset-7 columns">
+					
+					<ul class="menu vertical header__menu-sm">
+						<li>
+							<a href="delivery.html">
+								Доставка и оплата
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Гарантии
+							</a>
+						</li>
+						<li>
+							<a href="faq.html">
+								Справка
+							</a>
+						</li>
+					</ul>					
+
+				</div>
+			</div>
+
+		    <div class="row columns">
+		    	<div class="small-48 columns">
+					
+					<div class="header__menu">
+
+						<div class="menu expanded header__menu-items">
+							<div class="small-16 columns">
+								<a href="mounting.html">
+									Монтаж пленки
+								</a>
+							</div>
+							<div class="small-16 columns">
+								<a href="catalog.html">
+									Каталог пленки
+								</a>
+							</div>
+							<div class="small-16 columns">
+								<a href="contacts.html">
+									Контакты
+								</a>
+							</div>
+						</div>
+
+					</div>
+
+		    	</div>
+		    </div>
+
+		</div>
+
+      	<div class="small-8 columns p-l-0">
+
+      		<a class="sticker__order" href="">
+      			<span class="sticker__order-info clearfix">
+					<i class="icons icons--ordering"></i>
+					<span class="badge badge-round">5</span>
+					<span class="sticker__order-price">на 270 000 <strong class="rub">a</strong></span>
+      			</span>
+      			<span class="sticker__order-title">
+      				Оформление
+      				<br />
+					заказa
+      			</span>
+      		</a>
+
+      	</div>
+
+    </div>
+</header>
+
+<!-- [For Mobile Only] -->
+<header class="header page--line show-for-small hide-for-large">
+	
+	<div class="title-bar mobtop-menu" data-responsive-toggle="mobtop-menu" data-hide-for="large">
+		<div class="row">
+			<div class="small-8 columns">
+				<button class="menu-icon mobtop-menu__btn js-mobtop-menu__btn" type="button" data-toggle>
+				<i class="icons icons--svg icons--mob-menu-open">
+					<svg viewBox="0 0 29 27">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icons_all"></use>
+					</svg>
+				</i>
+				<i class="icons icons--svg icons--close-white">
+					<svg viewBox="0 0 27 27">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icons_close"></use>
+					</svg>
+				</i>
+				</button>
+			</div>
+			<div class="small-24 columns">
+				<a class="mobtop-menu__phone" href="">
+					+7 (495) 781-23-45
+				</a>
+			</div>
+			<div class="small-15 columns">
+				<a class="mobtop-menu__contacts" href="">
+					Контакты
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- [Logo Menu] -->
+	<div class="row mobtop-logo">
+		<div class="small-16 columns">
+			<a class="mobtop-logo__logo" href="">
+				<img src="assets/img/ultra-block-logo.png" width="74" height="49" />
+			</a>
+		</div>
+		<div class="small-32 columns">
+			{{#ifpage 'about' 'article' 'catalog' 'catalog-item' 'catalog-list' 'catalog-list-sm' 'contacts' 'delivery' 'faq' 'index' 'mounting' 'news' 'notfound' 'order-empty' 'reviews-list' 'sample-works' 'search' 'types' 'types-article'}}
+				<button class="width-100 button mobtop-btn">Оформление заказа</button>
+			{{/ifpage}}
+			{{#ifpage 'order'}}
+				<div class="button-group mobtop__btn-group width-100">
+					<button class="button mobtop__btn-btn button--empty">Оформление заказа</button><button class="button mobtop__btn-btn">2</button>
+				</div>
+			{{/ifpage}}
+		</div>
+	</div>
+	<!-- [/Logo Menu] -->
+
+	<!-- [Drop Down Menu] -->
+	<div class="top-bar mobtop-menu__dropdown" id="mobtop-menu" style="display: none;">
+		<form class="mobtop-menu__form" action="">
+			<button class="mobtop-menu__submit"><i class="icons icons--svg icons--mob-search">
+			<svg viewBox="0 0 34 34">
+			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icons_search"></use>
+			</svg></i></button>
+			<input class="mobtop-menu__search" type="text" name="search" placeholder="Поиск по сайту..." />
+		</form>
+		<ul class="submenu menu vertical mobtop-menu__submenu" data-submenu>
+			<li>
+				<a class="mobtop-menu__submenu-item" href="#">
+					Услуги
+				</a>
+			</li>
+			<li>
+				<a class="mobtop-menu__submenu-item" href="#">
+					Каталог пленки
+				</a>
+			</li>
+			<li>
+				<a class="mobtop-menu__submenu-item" href="#">
+					Оформление заказа
+				</a>
+			</li>
+			<li>
+				<a class="mobtop-menu__submenu-item" href="#">
+					Доставка и оплата
+				</a>
+			</li>
+			<li>
+				<a class="mobtop-menu__submenu-item" href="#">
+					Гарантии
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- [/Drop Down Menu] -->
+
+	{{#ifpage 'index'}}
+		<div class="mobphone">
+			<div class="mobphone__text">
+				<p>
+					Вы можете оформить
+					<br />
+					заявку на покупку и монтаж
+					<br />
+					пленки <a href=""><strong>онлайн</strong></a> или по тел.:
+				</p>
+			</div>
+			<a class="mobphone__phone" href="">8 (495) <strong>781-23-45</strong></a>
+			<hr class="hline" />
+		</div>
+	{{/ifpage}}
+
+</header>
+<!-- [/For Mobile Only] -->

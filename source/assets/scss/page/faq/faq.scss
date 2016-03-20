@@ -1,0 +1,95 @@
+
+.faq {
+	&__list {
+		margin: 0px;
+		padding: 0px;
+		list-style-type: none;
+		font-size: rem-calc( 18px );
+		border-top: 1px dashed #d4dbdd;
+		padding-top: rem-calc( 30px );
+		margin-bottom: rem-calc( 35px );
+		&>li {
+			margin-bottom: rem-calc( 12px );
+			&:last-child {
+				margin-bottom: 0px;
+			}
+			&>a {
+				border-bottom: 1px dashed;
+				color: $gray-color;
+				&:hover {
+					border-bottom-color: transparent;
+				}
+			}
+		}
+	}
+	&__item {
+		border-bottom: 1px dashed #d4dbdd;
+		padding-bottom: rem-calc( 15px );
+		margin-bottom: rem-calc( 27px );
+		&:last-child {
+			border-bottom: 0px none;
+		}
+		&-title {
+			@extend .font-helveticaneue-thin;
+			font-size: rem-calc( 30px );
+			line-height: 1.35;
+			margin-bottom: rem-calc( 20px );
+		}
+		&-text {
+			&,
+			& p {
+				@extend .font-helveticaneue-light;
+				font-size: rem-calc( 18px );
+			}
+		}
+	}
+}
+
+/* [Mob Top Menu] */
+@include breakpoint(medium down) {
+	
+	.faq {
+		&__list {
+			padding-top: rem-calc( 12px );
+			border-top: 0px none;
+			font-size: rem-calc( 15px );
+			padding-bottom: rem-calc( 17px );
+			margin-bottom: rem-calc( 11px );
+			border-bottom: 1px dashed #ccc;
+			line-height: 1.35;
+			&>li {
+				margin-bottom: rem-calc( 15px );
+				&>a {
+
+				}
+			}
+
+		}
+		&__item {
+			padding-bottom: rem-calc( 0px );
+			margin-bottom: rem-calc( 12px );
+			&:first-child {
+				padding-top: 12px;
+			}
+			&:last-child {
+				&,
+				& p {
+					margin-bottom: 4px;
+				}
+			}
+			&-title {
+				font-size: rem-calc( 18px );
+				margin-bottom: rem-calc( 8px );
+				color: #000;
+			}
+			&-text {
+				&,
+				& p {
+					font-size: rem-calc( 13px );
+					color: $gray-color;
+				}
+			}
+		}
+	}
+
+}

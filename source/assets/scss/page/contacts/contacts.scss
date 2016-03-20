@@ -1,0 +1,186 @@
+
+.contacts {
+	font-size: rem-calc( 18px );
+	color: $base-color;
+	&__work-time {
+		margin-bottom: rem-calc(42px);
+		& p {
+			margin-bottom: rem-calc(0px);
+		}
+		&,
+		& p {
+			@extend .font-helveticaneue-medium;
+			font-size: rem-calc( 18px );
+			line-height: 1.70;
+			color: #000;
+		}
+	}
+	&__phone {
+		&-title {
+			@extend .font-helveticaneue-light;
+			display: block;
+			line-height: 1.35;
+		}
+		&-text {
+			font-size: rem-calc( 30px );
+			@extend .font-helveticaneue-thin;
+		}
+	}
+	&__address {
+		&-title {
+			@extend .font-helveticaneue-light;
+			display: block;
+		}
+		&-text {
+			font-size: rem-calc( 14px );
+			@extend .font-helveticaneue;
+		}
+	}
+	&__email {
+		&-title {
+			@extend .font-helveticaneue-light;
+			display: block;
+		}
+		&-text {
+			font-size: rem-calc( 14px );
+			@extend .font-helveticaneue;
+			a {
+				text-decoration: underline;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	&__ymaps {
+		&,
+		& iframe {
+			height: 310px;
+		}
+		& iframe {
+			width: 100%;
+		}
+		&-href {
+			font-size: rem-calc( 14px );
+			text-decoration: underline;
+			display: block;
+			line-height: 1.0;
+			padding-top: rem-calc( 18px );
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+/* [Mob Top Menu] */
+@include breakpoint(medium down) {
+	
+	.contacts {
+		&__title {
+			font-size: rem-calc( 21px );
+			@extend .font-helveticaneue-heavy;
+			text-transform: uppercase;
+			margin: rem-calc( 0px 0px 9px );
+		}
+		&__work-time {
+			&,
+			& p {
+				font-size: rem-calc( 16px );
+				@extend .font-helveticaneue-medium;
+				line-height: 1.50;
+			}
+			br {
+				display: none;
+			}
+			sup {
+				text-decoration: underline;
+			}
+		}
+		&__work-time,
+		&__address,
+		&__phone {
+			padding-bottom: rem-calc( 13px );
+			margin-bottom: rem-calc( 13px );
+			border-bottom: 1px dashed #ccc;			
+		}
+		&__phone {
+			&-title {
+				font-size: rem-calc( 15px );
+			}
+			&-text {
+				&,
+				& p {
+					font-size: rem-calc( 22px );
+					line-height: 1.45;
+					display: block;
+				}
+				& p {
+					margin-bottom: rem-calc( 3px );
+				}
+				a {
+					border-bottom: 1px dashed;
+					&:hover,
+					&:focus {
+						border-bottom-color: transparent;
+					}
+				}
+			}
+		}
+		&__address {
+			&-title {
+				font-size: rem-calc( 15px );
+			}
+			&-text {
+				&,
+				& p {
+					font-size: rem-calc( 13px );
+					line-height: 1.35;
+					display: block;
+					color: $gray-color;
+				}
+				& p {
+					margin-bottom: rem-calc( 3px );
+				}
+			}
+		}
+		&__email {
+			margin-bottom: rem-calc( 38px );
+			&-title {
+				font-size: rem-calc( 15px );
+			}
+			&-text {
+				&,
+				& p {
+					font-size: rem-calc( 13px );
+					line-height: 1.35;
+					display: block;
+					color: $gray-color;
+				}
+				& p {
+					margin-bottom: 0px;
+				}
+			}
+		}
+		&__ymaps {
+			margin-left: rem-calc( -20px );
+			margin-right: rem-calc( -20px );
+			&,
+			& iframe {
+				height: 320px;
+			}
+			&-href {
+				font-size: rem-calc( 13px );
+				text-decoration: none;
+				border-bottom: 1px dashed;
+				display: inline-block;
+				padding-top: rem-calc( 15px );
+				&:hover,
+				&:focus {
+					border-bottom-color: transparent;
+				}
+			}
+		}
+	}
+
+}

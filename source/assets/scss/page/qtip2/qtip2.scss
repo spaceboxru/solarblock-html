@@ -1,0 +1,100 @@
+
+.qtip {
+	max-width: 360px;
+	&-titlebar {
+		position: absolute;
+		visibility: hidden;
+	}
+	& &-titlebar {
+		background: transparent;
+		position: relative;
+		visibility: visible;
+		padding: 0px;
+	}
+	&-content {
+		background: transparent;
+		padding: 0px;
+		border-radius: 5px;
+		box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.08);
+		padding: rem-calc( 25px 25px );
+
+	}
+	&-title {
+		background: transparent;
+		font-size: rem-calc( 18px );
+		@extend .font-helveticaneue-medium;
+		line-height: 1.40;
+		margin-bottom: rem-calc( 10px );
+		color: $base-color;
+	}
+	&.qtip-pos-tl {
+		margin: rem-calc( 20px 0px 0px -20px);
+		&:after {
+			border-color: transparent transparent #fff;
+			top: -18px;
+		}
+	}
+	&.qtip-pos-bl {
+		margin: rem-calc( -20px 0px 0px -20px);
+		&:after {
+			border-color: #fff transparent transparent;
+			bottom: -18px;
+		}
+	}
+	&-default {
+		background: #fff;
+		border: 0px none;
+		border-radius: 5px;
+		.qtip-close {
+			border: 0px none;
+			font-size: 0px;
+			line-height: 0;
+			color: #fff;
+			top: 18px;
+			right: 14px;
+			.ui-icon-close {
+				content: "";
+				@extend .icons;
+				@extend .icons--close;
+				border: 0px none;
+			}
+		}
+		.qtip-icon {
+			background: transparent;
+			.ui-icon {
+				display: block;
+				position: relative;
+				&:after {
+					position: absolute;
+					top: 0px;
+					right: 0px;
+				}
+			}
+		}
+		&:after {
+			content: "";
+			width: 0px;
+			height: 0px;
+			border-width: 9px 9px;
+			border-style: solid;
+			position: absolute;
+			left: 22px;
+		}
+		p {
+			margin-bottom: 0px;
+			font-size: rem-calc( 14px );
+			@extend .font-helveticaneue;
+			font-weight: normal;
+		}
+	}
+}
+
+/* [Mob Top Menu] */
+@include breakpoint(medium down) {
+	
+	.qtip {
+		max-width: 280px;
+		
+	}
+	
+}

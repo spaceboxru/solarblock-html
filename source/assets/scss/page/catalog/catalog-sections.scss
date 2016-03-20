@@ -1,0 +1,31 @@
+.catalog-sections {
+	&__title {
+		font-size: rem-calc( 30px );
+		color: #000;
+		@extend .font-helveticaneue-medium;
+		line-height: 1.1;
+		margin-bottom: rem-calc( 40px );
+	}
+	&__item {
+		color: $dkblue;
+		text-decoration: none;
+		.icons {
+			height: 60px;
+			width: 60px;
+			padding: rem-calc( 5px );
+			margin-bottom: rem-calc( 21px );
+		}
+		&-name {
+			text-decoration: underline;
+			display: block;
+			font-size: rem-calc( 16px );
+			line-height: 1.40;
+			@extend .font-helveticaneue-medium;
+		}
+		&:hover {
+			.catalog-sections__item-name {
+				text-decoration: none;
+			}
+		}		
+	}
+}

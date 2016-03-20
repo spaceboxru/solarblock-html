@@ -1,0 +1,30 @@
+
+.breadcrumbs {
+	li:not(:last-child)::after {
+		content: ">";
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		top: -1px;
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+	li {
+		&,
+		& span,
+		& a {
+			font-size: rem-calc(13px);
+			color: $ltgray-color;
+			vertical-align: middle;
+			text-transform: none;
+		}
+		& a {
+			text-decoration: underline;
+			&:hover,
+			&:active,
+			&:focus {
+				text-decoration: none;
+			}
+		}
+	}
+}

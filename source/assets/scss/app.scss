@@ -1,0 +1,88 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@import "sprites/sprites";
+@import "vendor/qtip/jquery.qtip";
+@import "vendor/custom-select/customSelectBox";
+@import "vendor/custom-select/jquery.jscrollpane";
+@import "vendor/ninja-slider/ninja-slider";
+@import "vendor/ninja-slider/thumbnail-slider";
+
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-accordion;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+// @include foundation-callout;
+// @include foundation-close-button;
+// @include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+// @include foundation-flex-video;
+@include foundation-label;
+// @include foundation-media-object;
+@include foundation-menu;
+// @include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+// @include foundation-progress-bar;
+// @include foundation-slider;
+// @include foundation-sticky;
+// @include foundation-reveal;
+// @include foundation-switch;
+// @include foundation-table;
+// @include foundation-tabs;
+@include foundation-thumbnail;
+// @include foundation-title-bar;
+// @include foundation-tooltip;
+@include foundation-top-bar;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+@import "page/_variables";
+@import "page/_mixins";
+@import "page/_forms";
+@import "page/_total";
+@import "page/_typo";
+@import "page/_icons";
+@import "page/_navs";
+
+@import "page/header/header";
+
+@import "page/orbit/orbit";
+@import "page/bx/bx";
+@import "page/breadcrumbs/breadcrumbs";
+@import "page/index/index";
+@import "page/article/article";
+@import "page/page/page";
+@import "page/notfound/notfound";
+@import "page/about/about";
+@import "page/contacts/contacts";
+@import "page/news/news";
+@import "page/faq/faq";
+@import "page/search/search";
+@import "page/delivery/delivery";
+@import "page/reviews-list/reviews-list";
+@import "page/types/types";
+@import "page/mounting/mounting";
+@import "page/catalog/catalog";
+@import "page/catalog/catalog-sections";
+@import "page/catalog/catalog-item";
+@import "page/qtip2/qtip2";
+@import "page/sample-works/sample-works";
+@import "page/custom-select/custom-select";
+@import "page/order/order";
+@import "page/ninja-slider/ninja-slider";
+@import "page/fscreen-slider/fscreen-slider";
+
+@import "page/footer/footer";
