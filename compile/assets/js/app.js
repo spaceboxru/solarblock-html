@@ -2454,6 +2454,12 @@ jQuery(function($) {
 	(function() {
 		var $orderList = $('input[name^="order-list-"'); 
 		
+		if(!$orderList.eq(0).is(':checked')) {
+			// Select default "Move master"
+			if($('body').data('page') == "/personal/cart/") $orderList.eq(0).trigger('click');
+			//location.href = $orderList.eq(0).nextAll('a').eq(0).attr('href');
+		}
+		
 		$orderList.on('change', function(e) {
 			e.preventDefault();
 			var $this = $(this),
