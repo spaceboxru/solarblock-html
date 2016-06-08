@@ -1,0 +1,231 @@
+<header class="header header--new page--line hide-for-small show-for-large">
+    <div class="row columns">
+    	<div class="small-12 columns">
+			
+      		<a href="indexnew.html" id="logo"><img src="assets/img/ultra-block-logo.png" width="148" height="98" /></a>
+			
+      	</div>
+      	<div class="small-24 columns">
+
+			<div class="row">
+				<div class="small-24 columns">
+					
+					<ul class="menu vertical header__menu-popup clearfix">
+						<li class="header__menu-popup__parent">
+							<a href="">
+								Тонировка окон
+							</a>
+							<ul class="header__menu-popup__nested">
+								<li>
+									<a href="">
+										Тонировка окон в магазине, торговом центре
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Тонировка окон в квартирах
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Тонировка окон и перегородок в офисе
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Тонировка окон на даче (Подмосковье)
+									</a>
+								</li>
+							</ul>	
+						</li>
+						<li>
+							<a href="#">
+								Купить пленку
+							</a>
+						</li>
+						<li>
+							<a href="faq.html">
+								О компании
+							</a>
+						</li>
+					</ul>						
+					
+
+					
+				</div>
+				<div class="small-24 columns">
+					
+					<div class="header__phone">
+						<p>
+							Контактный телефон:
+						</p>
+						<p class="header__phone-num">
+							<strong>+7 (495) 781-23-45</strong>
+						</p>
+						<p>
+							Без перерывов и выходных
+						</p>
+					</div>				
+
+				</div>
+			</div>
+
+		</div>
+
+      	<div class="small-12 columns">
+
+      		<div class="header__text">
+				
+				<p>
+					Адрес организации:
+					м. Калужская
+					ул. 1905 года, дом 7, стр. 1
+					Москва, 123995, Россия
+				</p>
+				
+			</div>
+
+      	</div>
+
+    </div>
+	
+	<div class="header__catalog-menu hide-for-small show-for-large m-t-35">
+		<div class="row">
+			<div class="small-48 columns">
+				<ul class="menu expanded header_nav">
+					<li>
+						<a href="#">
+							<span class="decorate">Солнцезащитная</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="decorate">Декоративная</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="decorate">Бронирующая</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="decorate">Теплоотражающая</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</header>
+
+<!-- [For Mobile Only] -->
+<header class="header page--line show-for-small hide-for-large">
+	
+	<div class="title-bar mobtop-menu" data-responsive-toggle="mobtop-menu" data-hide-for="large">
+		<div class="row">
+			<div class="small-8 columns">
+				<button class="menu-icon mobtop-menu__btn js-mobtop-menu__btn" type="button" data-toggle>
+				<i class="icons icons--svg icons--mob-menu-open">
+					<svg viewBox="0 0 29 27">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icons_all"></use>
+					</svg>
+				</i>
+				<i class="icons icons--svg icons--close-white">
+					<svg viewBox="0 0 27 27">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icons_close"></use>
+					</svg>
+				</i>
+				</button>
+			</div>
+			<div class="small-24 columns">
+				<a class="mobtop-menu__phone" href="">
+					+7 (495) 781-23-45
+				</a>
+			</div>
+			<div class="small-15 columns">
+				<a class="mobtop-menu__contacts" href="">
+					Контакты
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- [Logo Menu] -->
+	<div class="row mobtop-logo">
+		<div class="small-16 columns">
+			<a class="mobtop-logo__logo" href="">
+				<img src="assets/img/ultra-block-logo.png" width="74" height="49" />
+			</a>
+		</div>
+		<div class="small-32 columns">
+			{{#ifpage 'about' 'article' 'catalog' 'catalog-item' 'catalog-list' 'catalog-list-sm' 'contacts' 'delivery' 'faq' 'index' 'mounting' 'news' 'notfound' 'order-empty' 'reviews-list' 'sample-works' 'search' 'types' 'types-article'}}
+				<button class="width-100 button mobtop-btn">Оформление заказа</button>
+			{{/ifpage}}
+			{{#ifpage 'order'}}
+				<div class="button-group mobtop__btn-group width-100">
+					<button class="button mobtop__btn-btn button--empty">Оформление заказа</button><button class="button mobtop__btn-btn">2</button>
+				</div>
+			{{/ifpage}}
+		</div>
+	</div>
+	<!-- [/Logo Menu] -->
+
+	<!-- [Drop Down Menu] -->
+	<div class="top-bar mobtop-menu__dropdown" id="mobtop-menu" style="display: none;">
+		<form class="mobtop-menu__form" action="">
+			<button class="mobtop-menu__submit"><i class="icons icons--svg icons--mob-search">
+			<svg viewBox="0 0 34 34">
+			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icons_search"></use>
+			</svg></i></button>
+			<input class="mobtop-menu__search" type="text" name="search" placeholder="Поиск по сайту..." />
+		</form>
+		<ul class="submenu menu vertical mobtop-menu__submenu" data-submenu>
+			<li>
+				<a class="mobtop-menu__submenu-item" href="#">
+					Услуги
+				</a>
+			</li>
+			<li>
+				<a class="mobtop-menu__submenu-item" href="#">
+					Каталог пленки
+				</a>
+			</li>
+			<li>
+				<a class="mobtop-menu__submenu-item" href="#">
+					Оформление заказа
+				</a>
+			</li>
+			<li>
+				<a class="mobtop-menu__submenu-item" href="#">
+					Доставка и оплата
+				</a>
+			</li>
+			<li>
+				<a class="mobtop-menu__submenu-item" href="#">
+					Гарантии
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- [/Drop Down Menu] -->
+
+	{{#ifpage 'index'}}
+		<div class="mobphone">
+			<div class="mobphone__text">
+				<p>
+					Вы можете оформить
+					<br />
+					заявку на покупку и монтаж
+					<br />
+					пленки <a href=""><strong>онлайн</strong></a> или по тел.:
+				</p>
+			</div>
+			<a class="mobphone__phone" href="">8 (495) <strong>781-23-45</strong></a>
+			<hr class="hline" />
+		</div>
+	{{/ifpage}}
+
+</header>
+<!-- [/For Mobile Only] -->

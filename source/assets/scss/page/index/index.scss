@@ -1,4 +1,157 @@
 
+
+.mounting-order {
+	background: transparent url(../img/index-bg/index-top-bg.jpg) no-repeat 45% 0%;
+	&__title {
+		font-size: 35px;
+		line-height: 1.15;
+	}
+	&__price {
+		position: relative;
+		margin: 32px 0px 42px;
+		font-size: rem-calc(18px);
+		&:after {
+			@extend .after;
+			right: 0px;
+			bottom: 0px;
+			left: 0px;
+			border-bottom: 7px solid $dkblue;
+		}
+		&__btn {
+			margin-bottom: -7px;
+		}
+		&__btn,
+		&__num {
+			float: left;
+			width: 50%;
+		}
+		&__num {
+			font-size: rem-calc(50px);
+			line-height: 1.0;
+			margin-top: -7px;
+			font-family: 'helveticaneuecyrmedium';
+			.rub {
+				font-weight: 400;
+			}
+		}
+	}
+	&__prop {
+		max-width: 345px;
+		&,
+		p {
+			font-size: rem-calc(14px);
+			line-height: 1.4;
+		}
+		&-icon {
+			margin-bottom: 23px;
+		}		
+		&__title {
+			&,
+			p {
+				font-size: rem-calc(18px);
+			}
+			p {
+				margin-bottom: 42px;
+			}
+		}
+	}
+	&__anons {
+		max-width: 240px;
+		&,
+		p {
+			font-size: rem-calc(14px);
+		}
+		p {
+			margin-bottom: 23px;
+		}
+	}
+	.readmore {
+		font-size: rem-calc(14px);
+	}
+}
+
+.mounting-price {
+	
+	&__title {
+		font-size: rem-calc(35px);
+		line-height: 1.15;
+		margin-bottom: 23px;
+	}
+	&__subtitle {
+		font-size: rem-calc(18px);
+		font-family: 'helveticaneuecyrmedium';
+		margin-bottom: 25px;
+	}
+	&__anons {
+		font-size: rem-calc(18px);
+		font-family: 'helveticaneuecyrlight';
+		margin-bottom: 50px;
+	}
+	&__table {
+		width: 100%;
+		border-bottom: 4px solid $line-color;
+		margin-bottom: 28px;
+		&:last-child {
+			margin-bottom: 0px;
+			border-bottom: 0px;
+		}
+		& th,
+		& td {
+			text-align: left;
+		}
+		& th {
+			background: #eef1f2;
+			font-weight: normal;
+			font-size: rem-calc(12px);
+			line-height: 1.0;
+			padding: 5px 10px;
+		}
+		& td {
+			font-size: rem-calc(14px);
+			padding: 14px 10px;
+			strong {
+				font-family: 'helveticaneuecyrbold';
+			}
+			border-top: 1px solid $line-color;
+		}
+	}
+	&__page {
+		margin: 0px -40px 27px;
+		position: relative;
+		.mounting-price__subtitle {
+			padding-left: 10px;
+		}
+		&-in {
+			background: white;
+			padding: 42px 30px 55px;
+			position: relative;
+			z-index: 100;
+			box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.12);
+		}
+		&:before,
+		&:after	{
+			@extend .before;
+			position: absolute;
+			background: white;
+			right: 7px;
+			left: 7px;
+			z-index: 10;
+		}
+		&:before {
+			top: -6px;
+			bottom: -5px;
+			transform: rotate(-360.4deg);
+			box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.10);
+		}
+		&:after {
+			top: -5px;
+			bottom: -2px;
+			transform: rotate(+360.3deg);
+			box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.08);
+		}
+	}
+}
+
 .slider {
 	background: transparent;
 	margin: 0px -240px 0px 0px;

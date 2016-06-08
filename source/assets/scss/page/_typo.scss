@@ -162,7 +162,8 @@ p {
 }
 b,
 strong {
-    @extend .font-helveticaneue-bold;
+	font-family: 'helveticaneuecyrroman';
+	font-weight: bold;
 }
 * {
     &:focus,

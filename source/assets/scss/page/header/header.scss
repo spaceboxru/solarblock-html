@@ -2,16 +2,7 @@
 .header {
 	padding-top: rem-calc(38px);
 	margin-bottom: rem-calc(38px);
-	#logo {
-		&,
-		img {
-			display: block;
-		}
-	}
-	.sticker__order {
-		margin-top: -38px;
-	}
-	& &__search {
+	&__search {
 		position: relative;
 		@include placeholder {
 		    color: $ltgray-color;
@@ -37,6 +28,121 @@
 			left: 0px;
 		}
 	}
+	&--new {
+		font-size: rem-calc(12px);
+		color: $midgray-color;
+		margin-bottom: rem-calc(10px);
+		&,
+		p {
+			line-height: 1.9;
+		}
+		.header__text {
+			max-width: 160px;
+		}
+		.header__phone {
+			font-size: rem-calc(12px);
+			p {
+				margin: 0px 0px 5px;
+			}
+			.header__phone-num {
+				font-size: rem-calc(20px);
+				margin: 0px 0px 2px;
+			}
+		}
+	}
+	&__menu-popup {
+		font-size: rem-calc(16px);
+		font-weight: bold;
+		&>li {
+			position: relative;
+			float: left;
+			clear: left;
+			&:not(.menu-text)>a {
+				padding: 0px;
+			}
+			a {
+				text-decoration: underline;
+				&:hover {
+					text-decoration: none;
+				}				
+			}
+			&:hover>a,
+			a:hover,
+			a.active {
+				color: $red;
+			}
+			&+li {
+				margin-top: 10px;
+			}
+			&:hover {
+				.header__menu-popup__nested {
+					display: block;
+				}
+			}
+		}
+		&__parent {
+			display: inline-block;
+			padding-right: 15px;
+			&:before {
+				@extend .before;
+				position: absolute;
+				top: 6px;
+				right: 0px;
+				border-width: 5px 3px;
+				border-style: solid;
+				border-color: $blue transparent transparent transparent;
+			}
+			&:hover:before {
+				top: 0px;
+				border-color: transparent transparent $red transparent;
+			}
+		}
+		&__nested {
+			background: white;
+			position: absolute;
+			top: -1.4em;
+			left: 100%;
+			width: 230px;
+			padding: 18px 20px 29px;
+			font-size: rem-calc(14px);
+			line-height: 1.35;
+			font-weight: normal;
+			border-radius: 6px;
+			box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.15);
+			display: none;
+			&:before {
+				@extend .before;
+				position: absolute;
+				left: -20px;
+				border-width: 10px;
+				border-style: solid;
+				border-color: transparent white transparent transparent;
+			}
+			&>li {
+				a,
+				a:hover,
+				a.active {
+					color: $midgray-color;
+				}
+				&+li {
+					margin: 14px 0px 0px;
+				}
+			}
+		}
+	}
+}
+.header {
+
+	#logo {
+		&,
+		img {
+			display: block;
+		}
+	}
+	.sticker__order {
+		margin-top: -38px;
+	}
+
 	&__phone {
 		color: $midgray-color;
 		font-size: rem-calc(16px);

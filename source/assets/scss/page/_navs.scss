@@ -3,6 +3,27 @@
 		padding: 0px;
 	}
 }
+.header__catalog-menu {
+	background: #eef3f5;
+	.menu > li:not(.menu-text) > a {
+		padding: 24px 0px 26px;
+	}
+	a {
+		font-size: rem-calc(20px);
+		line-height: 1.0;
+		font-weight: bold;
+		color: black;
+		text-decoration: none;
+		.decorate {
+			border-bottom: 1px solid;
+		}
+		&:hover {
+			.decorate {
+				border-bottom-color: transparent;
+			}
+		}
+	}
+}
 .header__menu {
 	&-sm {
 		li {

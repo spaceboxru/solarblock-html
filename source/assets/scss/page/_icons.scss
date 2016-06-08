@@ -183,6 +183,30 @@
 		}
 	}
 
+	&--readmore {
+		&:after {
+			@include sprite($readmore);
+		}
+	}
+
+	&--box {
+		&:after {
+			@include sprite($box);
+		}
+	}
+	
+	&--install {
+		&:after {
+			@include sprite($install);
+		}
+	}
+
+	&--trash {
+		&:after {
+			@include sprite($trash);
+		}
+	}
+	
 	&--testimonial-arrow-right {
 		&:after {
 			@include sprite($testimonial-arrow-right);

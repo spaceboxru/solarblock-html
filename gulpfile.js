@@ -128,7 +128,19 @@ gulp.task('sass', function() {
     //html: ['compile/**/*.html'],
     ignore: [
       new RegExp('^meta\..*'),
-      new RegExp('^\.is-.*')
+      new RegExp('^\.is-.*'),
+	  new RegExp('^\.m-.*'),
+	  new RegExp('^\.p-.*'),
+	  new RegExp('^\.clearfix.*'),
+	  new RegExp('^\.orbit.*'),
+	  new RegExp('^\.breadcrumbs.*'),
+	  new RegExp('^\.badge.*'),
+	  new RegExp('^\.dropdown.*'),
+	  new RegExp('^\.pagination.*'),
+	  new RegExp('^\.button.*'),
+	  new RegExp('^\.forms.*'),
+	  new RegExp('^\.thumbnail.*'),
+	  new RegExp('^\.label.*')
     ]
   }));
 
@@ -167,16 +179,15 @@ gulp.task('javascript', function() {
 });
 
 gulp.task('javascriptapp', function() {
-	/*
   var uglify = $.if(isProduction, $.uglify()
     .on('error', function (e) {
       console.log(e);
     }));
-*/
+/**/
   return gulp.src(PATHS.javascriptapp)
     .pipe($.sourcemaps.init())
     .pipe($.concat('app.js'))
-    //.pipe(uglify)
+    .pipe(uglify)
     .pipe($.if(!isProduction, $.sourcemaps.write()))
     .pipe(gulp.dest('compile/assets/js'));
 });

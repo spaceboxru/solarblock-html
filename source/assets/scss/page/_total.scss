@@ -30,6 +30,13 @@ svg {
 	fill: currentColor;
 }
 
+.before,
+.after {
+	content: "";
+	display: block;
+}
+
+
 .loader {
 	position: relative;
 	&:before {
@@ -341,6 +348,9 @@ svg {
 	}
 	&--sm {
 		border-bottom-width: 1px;
+	}
+	&--blue {
+		border-bottom-color: $dkblue;
 	}
 	&--red {
 		&.hline--fill-100,
