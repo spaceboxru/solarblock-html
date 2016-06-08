@@ -9,7 +9,7 @@ var sherpa      = require('style-sherpa');
 var spritesmith = require('gulp.spritesmith');
 
 // Check for --production flag
-var isProduction = !!(argv.production);
+var isProduction = !!!(argv.production);
 
 // Port to use for the development server.
 var PORT = 8000;
@@ -140,7 +140,9 @@ gulp.task('sass', function() {
 	  new RegExp('^\.button.*'),
 	  new RegExp('^\.forms.*'),
 	  new RegExp('^\.thumbnail.*'),
-	  new RegExp('^\.label.*')
+	  new RegExp('^\.label.*'),
+	  new RegExp('^\.slide.*'),
+	  new RegExp('^\.mui.*')
     ]
   }));
 
