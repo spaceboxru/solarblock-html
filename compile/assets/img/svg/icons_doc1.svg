@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="46.886" height="51.076" viewBox="0 0 46.886 51.076"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 51.076V0H30.215l16.67 16.315v34.761H0zm40.634-32.4L27.09 6.254v9.381a3.126 3.126 0 0 0 3.125 3.127h10.159l.26.25v-.336zm0 6.341h-9.377c-5.754 0-10.419-4.667-10.419-10.424V6.254H6.251v38.567h34.383V25.017zm-24.672.092h2.939v14.534H15.17V30.76h-3.481v-2.607c2.231-.062 3.981-.646 4.273-3.044z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="46.886px" height="51.076px" viewBox="0 0 46.886 51.076" enable-background="new 0 0 46.886 51.076" xml:space="preserve">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0,51.076V0h20.838l0,0h9.377l16.67,16.315v34.761H0z M40.634,18.676L27.09,6.254
+	v9.381c0,1.727,1.399,3.127,3.125,3.127h10.159l0.26,0.25V18.676z M40.634,25.017h-9.377c-5.754,0-10.419-4.667-10.419-10.424V6.254
+	H6.251v38.567h34.383V25.017z M15.962,25.109h2.939v14.534H15.17V30.76h-3.481v-2.607C13.92,28.091,15.67,27.507,15.962,25.109z"/>
+</svg>

@@ -60,9 +60,18 @@
 		&,
 		p {
 			font-size: rem-calc(14px);
+			line-height: 1.75;
 		}
 		p {
-			margin-bottom: 23px;
+			margin-bottom: 20px;
+		}
+	}
+	&__form {
+		&__title {
+			font-size: rem-calc(18px);
+			line-height: 1.35;
+			display: block;
+			margin-bottom: 19px;
 		}
 	}
 	.readmore {
