@@ -6,7 +6,7 @@
 			color: $gray-color;
 			font-size: rem-calc( 30px );
 			line-height: 1.5;
-			@extend .font-helveticaneue-thin;
+			@extend .font-helveticaneue-light;
 		}
 		& {
 			margin-bottom: rem-calc( 46px );
@@ -107,7 +107,7 @@
 			&,
 			& p {
 				font-size: rem-calc( 23px );
-				@extend .font-helveticaneue-thin;
+				@extend .font-helveticaneue-light;
 				line-height: 1.25;
 			}
 			& {

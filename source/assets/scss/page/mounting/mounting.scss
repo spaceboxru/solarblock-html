@@ -35,7 +35,7 @@
 			top: 240px;
 			/*max-height: 240px;*/
 			/*height: 240px;*/
-			font-family: "helveticaneuecyrthin";
+			font-family: "helveticaneuecyrlight";
 			font-size: rem-calc( 30px );
 			color: $gray-color;
 			position: relative;
@@ -352,7 +352,7 @@
 				font-size: rem-calc( 30px );
 				line-height: 1.40;
 				color: $gray-color;
-				@extend .font-helveticaneue-thin;
+				@extend .font-helveticaneue-light;
 			}
 		}
 		&-img {

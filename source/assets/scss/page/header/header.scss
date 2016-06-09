@@ -2,6 +2,8 @@
 .header {
 	padding-top: rem-calc(38px);
 	margin-bottom: rem-calc(38px);
+	position: relative;
+	z-index: 100;
 	&__search {
 		position: relative;
 		@include placeholder {
@@ -28,16 +30,25 @@
 			left: 0px;
 		}
 	}
+	&__text {
+		&,
+		p {
+			margin: 0px;
+		}
+	}
 	&--new {
 		font-size: rem-calc(12px);
 		color: $midgray-color;
 		margin-bottom: rem-calc(10px);
 		&,
 		p {
-			line-height: 1.9;
+			line-height: 1.7;
 		}
 		.header__text {
-			max-width: 160px;
+			max-width: 190px;
+			a {
+				color: $midgray-color;
+			}
 		}
 		.header__phone {
 			font-size: rem-calc(12px);
@@ -46,13 +57,14 @@
 			}
 			.header__phone-num {
 				font-size: rem-calc(20px);
-				margin: 0px 0px 2px;
+				line-height: 1.0;
+				margin: 0px 0px 8px;
 			}
 		}
 	}
 	&__menu-popup {
 		font-size: rem-calc(16px);
-		font-weight: bold;
+		@extend .font-helveticaneue-medium;
 		&>li {
 			position: relative;
 			float: left;
@@ -102,7 +114,7 @@
 			position: absolute;
 			top: -1.4em;
 			left: 100%;
-			width: 230px;
+			width: 270px;
 			padding: 18px 20px 29px;
 			font-size: rem-calc(14px);
 			line-height: 1.35;
@@ -147,7 +159,6 @@
 		color: $midgray-color;
 		font-size: rem-calc(16px);
 		line-height: 1.1;
-		margin-bottom: 18px;
 		color: #777;
 		strong {
 			color: #000;
@@ -200,7 +211,7 @@
 		margin-right: rem-calc( -20px );
 		color: $gray-color;
 		font-size: rem-calc( 22px );
-		@extend .font-helveticaneue-thin;
+		@extend .font-helveticaneue-light;
 		color: $gray-color;
 		text-align: center;
 		padding: rem-calc( 32px 20px 40px );
@@ -236,7 +247,7 @@
 		&__phone {
 			padding: rem-calc( 15x 0px 0px );
 			font-size: rem-calc( 34px );
-			@extend .font-helveticaneue-thin;
+			@extend .font-helveticaneue-light;
 			border-bottom: 1px dashed;
 			text-decoration: none;
 			line-height: 1.1;

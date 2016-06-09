@@ -1,4 +1,4 @@
-
+.inputtextarea,
 .form-control {
 	border: 1px solid #d6d6d6;
 	border-radius: 5px;
@@ -19,7 +19,9 @@
 		margin: 0px;
 	}
 }
-
+.inputtextarea {
+	height: 136px;
+}
 .button {
 	text-decoration: none;
 	margin: 0px;

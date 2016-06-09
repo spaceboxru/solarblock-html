@@ -10,7 +10,7 @@
 			color: $gray-color;
 			font-size: rem-calc( 30px );
 			line-height: 1.50;
-			@extend .font-helveticaneue-thin;
+			@extend .font-helveticaneue-light;
 			strong {
 				@extend .font-helveticaneue-bold;
 				color: #000;

@@ -232,7 +232,7 @@
 				right: 0px;
 				left: 0px;
 				color: $ltgray-color;
-				@extend .font-helveticaneue-thin;
+				@extend .font-helveticaneue-light;
 				font-size: rem-calc( 36px );
 				line-height: 1.1;
 				font-weight: 400;
@@ -282,7 +282,7 @@
 				color: $ltgray-color;
 				top: 39px;
 				right: 112px;
-				@extend .font-helveticaneue-thin;
+				@extend .font-helveticaneue-light;
 				font-size: rem-calc( 36px );
 				line-height: 1.1;
 				font-weight: 400;

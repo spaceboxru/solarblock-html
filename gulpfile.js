@@ -142,7 +142,24 @@ gulp.task('sass', function() {
 	  new RegExp('^\.thumbnail.*'),
 	  new RegExp('^\.label.*'),
 	  new RegExp('^\.slide.*'),
-	  new RegExp('^\.mui.*')
+	  new RegExp('^\.mui.*'),
+	  new RegExp('^\.icons.*'),
+	  new RegExp('^\.js-.*'),
+	  new RegExp('^\.catalog.*'),
+	  new RegExp('^\.row.*'),
+	  new RegExp('^\.columns.*'),
+	  new RegExp('^\.small.*'),
+	  new RegExp('^\.large.*'),
+	  new RegExp('^\.height.*'),
+	  new RegExp('^\.active.*'),
+	  new RegExp('^\.mdCustomSelect.*'),
+	  new RegExp('^\.select.*'),
+	  new RegExp('^\.custom.*'),
+	  new RegExp('^\.hide.*'),
+	  new RegExp('^\.inputtextarea.*'),
+	  new RegExp('^\.sample-works.*'),
+	  new RegExp('^\.show-.*'),
+	  new RegExp('^\.is-active.*')
     ]
   }));
 

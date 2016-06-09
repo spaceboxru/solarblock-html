@@ -25,7 +25,7 @@
 			margin-bottom: rem-calc(-9px);
 		}
 		&-toobig {
-			@extend .font-helveticaneue-thin;
+			@extend .font-helveticaneue-light;
 			font-size: rem-calc(276px);
 			line-height: 1.1;
 			position: absolute;

@@ -254,7 +254,7 @@
 		margin-bottom: rem-calc(31px);
 		.slider__title-detail {
 			font-size: rem-calc(25px);
-			@extend .font-helveticaneue-thin;
+			@extend .font-helveticaneue-light;
 			color: $dkblue;
 		}
 	}
@@ -450,7 +450,7 @@
 			& p {
 				font-size: rem-calc(30px);
 				line-height: 1.52;
-				@extend .font-helveticaneue-thin;
+				@extend .font-helveticaneue-light;
 			}
 			&:after {
 				content: "";
@@ -627,7 +627,7 @@
 		z-index: 100;
 	}
 	&__text {
-		@extend .font-helveticaneue-thin;
+		@extend .font-helveticaneue-light;
 		font-size: rem-calc(30px);
 		max-width: 55%;
 		&,
@@ -643,7 +643,7 @@
 		}
 	}
 	&__phone {
-		@extend .font-helveticaneue-thin;
+		@extend .font-helveticaneue-light;
 		font-size: rem-calc(60px);
 		color: $gray-color;
 		line-height: 1.1;

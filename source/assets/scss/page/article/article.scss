@@ -10,7 +10,7 @@
 	&__anons {
 		&,
 		& p {
-			@extend .font-helveticaneue-thin;
+			@extend .font-helveticaneue-light;
 			font-size: rem-calc( 30px );
 			line-height: 1.50;
 			color: $gray-color;

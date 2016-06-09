@@ -11,13 +11,14 @@
 	a {
 		font-size: rem-calc(20px);
 		line-height: 1.0;
-		font-weight: bold;
+		@extend .font-helveticaneue-medium;
 		color: black;
 		text-decoration: none;
 		.decorate {
 			border-bottom: 1px solid;
 		}
-		&:hover {
+		&:hover,
+		&.active {
 			.decorate {
 				border-bottom-color: transparent;
 			}

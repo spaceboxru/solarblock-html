@@ -21,7 +21,7 @@
 			&,
 			& a {
 				color: #000;
-				@extend .font-helveticaneue-thin;
+				@extend .font-helveticaneue-light;
 				font-size: rem-calc( 30px );
 				line-height: 1.1;				
 			}
@@ -44,7 +44,7 @@
 		&-day {
 			font-size: rem-calc( 36px );
 			line-height: 1.1;
-			@extend .font-helveticaneue-thin;
+			@extend .font-helveticaneue-light;
 			color: $ltgray-color;
 		}
 		&-year,

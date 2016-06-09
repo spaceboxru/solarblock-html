@@ -9,6 +9,10 @@ body {
 	position: relative;
 }
 
+* {
+	text-rendering: optimizeLegibility;
+}
+
 ul {
 	margin-bottom: rem-calc( 32px );
 	li {
@@ -403,6 +407,10 @@ svg {
 	width: 100%!important;
 }
 
+.height-auto {
+	height: auto!important;
+}
+
 $class-pright: p-r- !default;
 $class-pleft: p-l- !default;
 $class-ptop: p-t- !default;
@@ -531,7 +539,7 @@ $class-mtopsm: m-t-sm- !default;
 			text-align: center;
 			padding: rem-calc( 10px 0px );
 			font-size: rem-calc( 13px );
-			@extend .font-helveticaneue-thin;
+			@extend .font-helveticaneue-light;
 			top: 0px;
 			bottom: 0px;
 			right: 30%;
