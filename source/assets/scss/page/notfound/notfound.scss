@@ -21,11 +21,11 @@
 			line-height: 1.1;
 			font-size: rem-calc(42px);
 			text-transform: uppercase;
-			@extend .font-helveticaneue-heavy;
+			font-family: "helveticaneuecyrheavy";
 			margin-bottom: rem-calc(-9px);
 		}
 		&-toobig {
-			@extend .font-helveticaneue-light;
+			font-family: "helveticaneuecyrlight";
 			font-size: rem-calc(276px);
 			line-height: 1.1;
 			position: absolute;
@@ -41,7 +41,7 @@
 	&__form {
 		margin-bottom: rem-calc(35px);
 		p {
-			@extend .font-helveticaneue-light;
+			font-family: "helveticaneuecyrlight";
 			font-size: rem-calc(18px);
 		}
 		@include placeholder {
@@ -118,7 +118,7 @@
 		max-height: none;
 		height: auto;
 		font-size: rem-calc(15px);
-		@extend .font-helveticaneue-light;
+		font-family: "helveticaneuecyrlight";
 		p {
 			margin-bottom: rem-calc( 15px );
 			line-height: 1.55;
@@ -140,7 +140,7 @@
 			&-big {
 				font-size: rem-calc(21px);
 				text-transform: uppercase;
-				@extend .font-helveticaneue-heavy;
+				font-family: "helveticaneuecyrheavy";
 				margin-bottom: rem-calc( 12px );
 				br {
 					display: none;

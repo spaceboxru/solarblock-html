@@ -40,7 +40,7 @@
 		&__title {
 			text-transform: uppercase;
 			font-size: rem-calc( 21px );
-			@extend .font-helveticaneue-heavy;
+			font-family: "helveticaneuecyrheavy";
 			margin-bottom: rem-calc( 17px );
 		}
 		.notfound__form-input {
@@ -58,7 +58,7 @@
 				&,
 				& a {
 					font-size: rem-calc( 18px );
-					@extend .font-helveticaneue-light;
+					font-family: "helveticaneuecyrlight";
 					color: #000;
 				}
 			}
@@ -66,7 +66,7 @@
 				&,
 				& p {
 					font-size: rem-calc( 13px );
-					@extend .font-helveticaneue-light;
+					font-family: "helveticaneuecyrlight";
 					color: $gray-color;
 				}
 			}

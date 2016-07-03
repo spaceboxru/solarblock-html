@@ -17,7 +17,7 @@
 		&,
 		& p {
 			font-size: rem-calc(30px);
-			@extend .font-helveticaneue-light;
+			font-family: "helveticaneuecyrlight";
 			line-height: 1.50;
 		}
 		&:last-child {
@@ -66,7 +66,7 @@
 	}
 	&__title {
 		font-size: rem-calc(18px);
-		@extend .font-helveticaneue-medium;
+		font-family: "helveticaneuecyrmedium";
 		display: inline-block;
 		line-height: 1.1;
 		margin-bottom: rem-calc(18px);
@@ -123,7 +123,7 @@
 				&,
 				& p {
 					font-size: rem-calc(15px);
-					@extend .font-helveticaneue-medium;
+					font-family: "helveticaneuecyrmedium";
 					line-height: 1.55;
 					color: #000;
 				}
@@ -135,7 +135,7 @@
 		}
 		blockquote,
 		&__blockquote {
-			@extend .font-helveticaneue-light;
+			font-family: "helveticaneuecyrlight";
 			font-size: rem-calc(15px);
 			line-height: 1.55;
 			margin-bottom: rem-calc( 8px );
@@ -162,7 +162,6 @@
 	.us-brands {
 		padding-bottom: 0px;
 		&__header {
-			@extend .h2;
 			font-size: rem-calc( 20px );
 			margin-bottom: rem-calc(12px);
 		}
@@ -176,7 +175,7 @@
 		}
 		&__title {
 			font-size: rem-calc(16px);
-			@extend .font-helveticaneue-medium;
+			font-family: "helveticaneuecyrmedium";
 			display: inline-block;
 			line-height: 1.1;
 			margin-bottom: rem-calc( 6px );
@@ -193,7 +192,6 @@
 	.us-clients {
 		padding-bottom: rem-calc(15px);
 		&__header {
-			@extend .h2;
 			font-size: rem-calc( 20px );
 			border-bottom: 1px dashed #ccc;
 			padding-bottom: rem-calc( 12px );

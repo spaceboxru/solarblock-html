@@ -10,7 +10,7 @@
 	&__anons {
 		&,
 		& p {
-			@extend .font-helveticaneue-light;
+			font-family: "helveticaneuecyrlight";
 			font-size: rem-calc( 30px );
 			line-height: 1.50;
 			color: $gray-color;
@@ -24,7 +24,7 @@
 		margin: rem-calc( 0px 0px 42px );
 		&,
 		& p {
-			@extend .font-helveticaneue-light;
+			font-family: "helveticaneuecyrlight";
 			color: $gray-color;
 			font-size: rem-calc(18px);
 		}
@@ -62,7 +62,7 @@
 			&,
 			& p {
 				font-size: rem-calc( 15px );
-				@extend .font-helveticaneue-light;
+				font-family: "helveticaneuecyrlight";
 				margin: 0px;
 			}
 			& {
@@ -77,7 +77,7 @@
 			&,
 			& p {
 				font-size: rem-calc( 15px );
-				@extend .font-helveticaneue-light;
+				font-family: "helveticaneuecyrlight";
 			}
 		}
 		&__figure {

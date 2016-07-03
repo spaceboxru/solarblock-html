@@ -59,7 +59,7 @@
 				border-radius: 6px;
 				font-size: rem-calc( 25px );
 				line-height: 1.1;
-				@extend .font-helveticaneue-light;
+				font-family: "helveticaneuecyrlight";
 				color: #fff;
 				display: block;
 				text-align: center;
@@ -69,7 +69,7 @@
 					border-bottom-color: transparent;
 				}
 				strong {
-					@extend .font-helveticaneue-bold;
+					font-family: "helveticaneuecyrbold";
 				}
 				.decorate {
 					border-bottom: 1px solid;
@@ -86,7 +86,7 @@
 				display: block;
 				padding: rem-calc( 37px 0px );
 				font-size: rem-calc( 13px );
-				@extend .font-helveticaneue-light;
+				font-family: "helveticaneuecyrlight";
 				line-height: 1.1;
 				color: $gray-color;
 				text-align: center;
@@ -99,7 +99,7 @@
 				&__title,
 				&__href {
 					font-size: rem-calc( 13px );
-					@extend .font-helveticaneue-light;					
+					font-family: "helveticaneuecyrlight";			
 				}
 				.icons {
 					position: relative;

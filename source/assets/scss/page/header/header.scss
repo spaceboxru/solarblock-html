@@ -40,6 +40,9 @@
 		font-size: rem-calc(12px);
 		color: $midgray-color;
 		margin-bottom: rem-calc(10px);
+		&-inner {
+			margin-bottom: rem-calc(65px);
+		}
 		&,
 		p {
 			line-height: 1.7;
@@ -64,7 +67,7 @@
 	}
 	&__menu-popup {
 		font-size: rem-calc(16px);
-		@extend .font-helveticaneue-medium;
+		font-family: "helveticaneuecyrmedium";
 		&>li {
 			position: relative;
 			float: left;
@@ -211,7 +214,7 @@
 		margin-right: rem-calc( -20px );
 		color: $gray-color;
 		font-size: rem-calc( 22px );
-		@extend .font-helveticaneue-light;
+		font-family: "helveticaneuecyrlight";
 		color: $gray-color;
 		text-align: center;
 		padding: rem-calc( 32px 20px 40px );
@@ -234,7 +237,7 @@
 			a {
 				text-decoration: none;
 				strong {
-					@extend .font-helveticaneue-medium;
+					font-family: "helveticaneuecyrmedium";
 					border-bottom: 1px solid;
 				}
 				&:hover {
@@ -247,7 +250,7 @@
 		&__phone {
 			padding: rem-calc( 15x 0px 0px );
 			font-size: rem-calc( 34px );
-			@extend .font-helveticaneue-light;
+			font-family: "helveticaneuecyrlight";
 			border-bottom: 1px dashed;
 			text-decoration: none;
 			line-height: 1.1;
@@ -256,7 +259,7 @@
 				border-bottom-color: transparent;
 			}
 			strong {
-				@extend .font-helveticaneue-bold;
+				font-family: "helveticaneuecyrbold";
 			}
 		}
 	}

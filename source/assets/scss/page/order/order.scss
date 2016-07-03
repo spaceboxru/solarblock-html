@@ -25,7 +25,7 @@
 		padding-top: 0px;
 		&-name {
 			font-size: rem-calc( 30px );
-			@extend .font-helveticaneue-medium;
+			font-family: "helveticaneuecyrmedium";
 			margin-bottom: rem-calc( 29px );
 		}
 		&-price {
@@ -112,7 +112,7 @@
 			}
 			&-name {
 				font-size: rem-calc( 16px );
-				@extend .font-helveticaneue-medium;
+				font-family: "helveticaneuecyrmedium";
 				text-decoration: underline;
 				&,
 				&:hover,
@@ -209,7 +209,7 @@
 		}
 		&-label {
 			font-size: rem-calc( 16px );
-			@extend .font-helveticaneue-medium;
+			font-family: "helveticaneuecyrmedium";
 			span {
 				font-size: rem-calc( 13px );
 				display: block;
@@ -224,7 +224,7 @@
 		padding: rem-calc( 50px 60px 58px );
 		&-title {
 			font-size: rem-calc( 30px );
-			@extend .font-helveticaneue-medium;
+			font-family: "helveticaneuecyrmedium";
 			line-height: 1.1;
 			margin-bottom: rem-calc( 11px );
 		}
@@ -246,7 +246,7 @@
 		label {
 			display: inline-block;
 			font-size: rem-calc( 14px );
-			@extend .font-helveticaneue-medium;
+			font-family: "helveticaneuecyrmedium";
 			padding: rem-calc( 8px 0px 0px );
 			width: 100%;
 			line-height: 1.50;
@@ -292,7 +292,7 @@
 			padding: rem-calc( 17px 30px );
 			color: #fff;
 			font-size: rem-calc( 25px );
-			@extend .font-helveticaneue-medium;
+			font-family: "helveticaneuecyrmedium";
 			margin: auto;
 			border-radius: 7px;
 			&:hover,
@@ -315,7 +315,7 @@
 		margin-bottom: rem-calc( 20px );
 		.order-finish__num {
 			font-size: rem-calc( 18px );
-			@extend .font-helveticaneue-medium;
+			font-family: "helveticaneuecyrmedium";
 			margin-bottom: rem-calc( 2px );
 		}
 		.order-finish__data {
@@ -508,7 +508,7 @@
 			.button {
 				margin-bottom: rem-calc( 20px );
 				font-size: rem-calc( 23px );
-				@extend .font-helveticaneue-medium;
+				font-family: "helveticaneuecyrmedium";
 				font-weight: 400;
 				height: 90px;
 				padding: rem-calc( 32px 50px );

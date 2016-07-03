@@ -1,3 +1,9 @@
+label {
+	line-height: 1.1;
+	display: inline-block;
+	cursor: pointer;
+}
+
 .inputtextarea,
 .form-control {
 	border: 1px solid #d6d6d6;
@@ -42,6 +48,27 @@
 			}
 		}
 	}
+	&--frame {
+		background: transparent;
+		font-size: rem-calc(14px);
+		color: $gray-color;
+		border: 1px solid #bcc9cf;
+		margin: 0px 0px;
+		padding: rem-calc( 8px ) rem-calc( 12px );
+		&:hover {
+			background: transparent;
+			border-color: #d33;
+			color: #d33;
+		}
+		.icons {
+			&.icons--svg {
+				color: #fff;
+				svg {
+					fill: currentColor;
+				}
+			}
+		}
+	}
 	&-group {
 		.button:not(:last-child) {
 			border-right: 0px;
@@ -49,6 +76,7 @@
 	}
 	&.button--blue {
 		background: $dkblue;
+		border-color: $dkblue;
 		font-family: "helveticaneuecyrmedium";
 		color: #fff;
 		&:hover {
@@ -76,15 +104,16 @@
 		min-height: 30px;
 		border-radius: 5px;
 		font-size: rem-calc( 14px );
-		padding: rem-calc( 8px ) rem-calc( 10px );
+		padding: rem-calc( 8px ) rem-calc( 12px );
 	}
 	&.button--xs {
 		text-decoration: none;
-		height: 30px;
-		min-height: 30px;
+		height: 35px;
+		min-height: 35px;
 		border-radius: 4px;
-		font-size: rem-calc( 12px );
-		padding: rem-calc( 8px ) rem-calc( 8px );
+		font-size: rem-calc( 14px );
+		line-height: 1.1;
+		padding: rem-calc( 9px ) rem-calc( 12px );
 	}
 	&.button--square {
 		border-radius: 0px;

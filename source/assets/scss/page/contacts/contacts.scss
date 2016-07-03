@@ -9,7 +9,7 @@
 		}
 		&,
 		& p {
-			@extend .font-helveticaneue-medium;
+			font-family: "helveticaneuecyrmedium";
 			font-size: rem-calc( 18px );
 			line-height: 1.70;
 			color: #000;
@@ -79,7 +79,7 @@
 	.contacts {
 		&__title {
 			font-size: rem-calc( 21px );
-			@extend .font-helveticaneue-heavy;
+			font-family: "helveticaneuecyrheavy";
 			text-transform: uppercase;
 			margin: rem-calc( 0px 0px 9px );
 		}
@@ -87,7 +87,7 @@
 			&,
 			& p {
 				font-size: rem-calc( 16px );
-				@extend .font-helveticaneue-medium;
+				font-family: "helveticaneuecyrmedium";
 				line-height: 1.50;
 			}
 			br {

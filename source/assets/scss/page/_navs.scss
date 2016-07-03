@@ -5,8 +5,17 @@
 }
 .header__catalog-menu {
 	background: #eef3f5;
-	.menu > li:not(.menu-text) > a {
-		padding: 24px 0px 26px;
+	&-in {
+		margin-left: -40px;
+		margin-right: -40px;
+	}	
+	.menu {
+		&> li:not(.menu-text) {
+			width: 25%;
+			&> a {
+				padding: 24px 40px 26px;
+			}
+		}
 	}
 	a {
 		font-size: rem-calc(20px);
@@ -22,6 +31,12 @@
 			.decorate {
 				border-bottom-color: transparent;
 			}
+		}
+		&.active {
+			background: white;
+			position: relative;
+			padding-top: 21px;
+			margin-top: 3px;
 		}
 	}
 }
@@ -265,7 +280,7 @@
 		&__contacts,
 		&__phone {
 			font-size: rem-calc( 15px );
-			@extend .font-helveticaneue-light;
+			font-family: "helveticaneuecyrlight";
 			text-decoration: none;
 			border-bottom: 1px solid;
 			display: inline-block;
@@ -303,7 +318,7 @@
 				.mobtop-menu__submenu-item {
 					padding: rem-calc( 11px 0px );
 					font-size: rem-calc( 15px );
-					@extend .font-helveticaneue-light;
+					font-family: "helveticaneuecyrlight";
 					font-weight: 400;
 					border-top: 1px dashed #444;
 				}
@@ -409,7 +424,7 @@
 			}
 			a {
 				font-size: rem-calc( 13px );
-				@extend .font-helveticaneue-light;
+				font-family: "helveticaneuecyrlight";
 			}
 		}
 	}
@@ -477,7 +492,7 @@
 				display: block;
 				font-size: rem-calc( 16px );
 				line-height: 1.1;
-				@extend .font-helveticaneue-medium;
+				font-family: "helveticaneuecyrmedium";
 				color: #000;
 				padding: rem-calc( 18px 0px 15px );
 			}
@@ -522,7 +537,36 @@
 			right: 0px;
 			z-index: 999;
 			.mobcnt-menu__item {
-				@extend .btm-nav__title;
+				
+				padding: rem-calc( 17px 20px 18px );
+				margin: rem-calc( 0px -20px 1px );
+				font-size: rem-calc( 16px );
+				line-height: 1.1;
+				color: $blue;
+				position: relative;
+
+				background: #f2f6f8;
+				background: linear-gradient(#f2f6f8, #eff4f5);
+
+				.decorate {
+					border-bottom: 1px solid;
+				}
+				&:after {
+					background: transparent;
+					content: "";
+					display: block;
+					position: absolute;
+					right: 20px;
+					top: 50%;
+					margin-top: rem-calc( -4px );
+					width: 8px;
+					height: 8px;
+					border-width: 2px;
+					border-style: solid;
+					border-color: #b5c1c6 #b5c1c6 transparent transparent;
+					transform: rotate( 45deg ) skew( 5deg );
+				}	
+					
 				margin-left: 0px;
 				margin-right: 0px;
 			}

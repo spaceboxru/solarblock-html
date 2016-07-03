@@ -14,7 +14,7 @@
 			font-size: rem-calc( 25px );
 			line-height: 1.1;
 			border: 2px solid #d6d6d6;
-			@extend .font-helveticaneue-medium;
+			font-family: "helveticaneuecyrmedium";
 		}
 		.caret {
 			@include sprite($select-big);
@@ -67,7 +67,7 @@
 			padding: rem-calc( 10px 10px 10px 20px );
 			border-radius: 5px 0px 0px 5px;
 			color: $blue;
-			@extend .font-helveticaneue-medium;
+			font-family: "helveticaneuecyrmedium";
 			&.selected,
 			&.hovered {
 				background: #f3f7f8;
@@ -100,7 +100,7 @@
 				font-size: rem-calc( 16px );
 				border: 1px solid #d6d6d6;
 				border-radius: 4px;
-				@extend .font-helveticaneue-medium;
+				font-family: "helveticaneuecyrmedium";
 			}
 		}
 		&.select-open {
@@ -131,7 +131,7 @@
 				font-size: rem-calc( 16px );
 				border: 1px solid #d6d6d6;
 				border-radius: 4px;
-				@extend .font-helveticaneue-medium;
+				font-family: "helveticaneuecyrmedium";
 			}
 		}
 		&.select-open {

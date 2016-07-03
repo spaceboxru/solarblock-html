@@ -9,7 +9,7 @@ var sherpa      = require('style-sherpa');
 var spritesmith = require('gulp.spritesmith');
 
 // Check for --production flag
-var isProduction = !!!(argv.production);
+var isProduction = !!(argv.production);
 
 // Port to use for the development server.
 var PORT = 8000;

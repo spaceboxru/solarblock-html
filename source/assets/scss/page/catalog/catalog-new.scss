@@ -1,0 +1,68 @@
+
+.catalog-new {
+	&__title {
+		@extend .mounting-price__title;
+		margin-bottom: 35px;
+	}
+	&__subtitle {
+		@extend .mounting-price__subtitle;
+	}
+	&__filter {
+		background-color: #eef3f5;
+		margin: 0px -40px 40px;
+		&__form {
+			padding: 25px 40px 50px;
+			input[type='text'] {
+				padding-left: 30px;
+			}
+			&-label {
+				font-size: 16px;
+				font-family: "helveticaneuecyrmedium";
+				display: inline-block;
+			}
+			&-button {
+				line-height: 1.1;
+				& + .catalog-new__filter__form-button {
+					margin-left: 13px;
+				}
+				input[type='checkbox'] {
+					display: none;
+				}
+				input[type='checkbox']:checked + .button {
+					@extend .button.button--blue;
+					font-family: "helveticaneuecyrroman";
+				}
+			}
+		}
+		input[type='checkbox']:checked + &__colors {
+			border: 3px solid #06c;
+			padding: 5px;
+		}
+		&__colors {
+			border: 1px solid #bcc9cf;
+			border-radius: 2px;
+			padding: 7px;
+			display: inline-block;
+			font-size: 0px;
+			line-height: 0px;
+		}
+		&__from {
+			position: absolute;
+			font-size: 14px;
+			color: #000;
+			margin: rem-calc(8px 0px 8px 11px);
+		}
+	}
+	&__anons{
+		font-size: 22px;
+		font-family: 'helveticaneuecyrbold';
+		margin-bottom: 30px;
+	}
+}
+
+/* [Mob Top Menu] */
+@include breakpoint(medium down) {
+
+
+}
+/* [/Mob Top Menu] */

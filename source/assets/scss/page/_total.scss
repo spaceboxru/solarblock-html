@@ -40,6 +40,27 @@ svg {
 	display: block;
 }
 
+.qtip {
+	.qtip-content {
+		padding-right: rem-calc(35px);
+		a {
+			color: $gray-color;
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	&.qtip-pos-lc {
+		margin-left: 22px;
+		&:after {
+			top: 50%;
+			left: -18px;
+			margin-top: -11px;
+			border-color: transparent white transparent transparent;
+		}
+	}
+}
 
 .loader {
 	position: relative;
@@ -539,7 +560,7 @@ $class-mtopsm: m-t-sm- !default;
 			text-align: center;
 			padding: rem-calc( 10px 0px );
 			font-size: rem-calc( 13px );
-			@extend .font-helveticaneue-light;
+			font-family: "helveticaneuecyrlight";
 			top: 0px;
 			bottom: 0px;
 			right: 30%;

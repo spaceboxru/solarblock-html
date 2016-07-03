@@ -12,8 +12,14 @@ jQuery(function($) {
 				button: 'Закрыть'
 			},
 		    hide: {
-		        event: false
+		        event: true,
+				delay: 200
 		    },
+            show: {
+                event: 'click',
+                delay: 40,
+                solo: true
+            },
 		    position: {
 		        my: $this.data('qtip') || 'bottom left',
 		        at: $this.data('qtip') || 'bottom left'

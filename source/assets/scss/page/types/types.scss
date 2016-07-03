@@ -23,7 +23,7 @@
 
 		&__detail-title {
 			font-size: rem-calc( 23px );
-			@extend .font-helveticaneue-medium;
+			font-family: "helveticaneuecyrmedium";
 			margin-bottom: rem-calc( 15px );
 		}
 
@@ -43,7 +43,7 @@
 				&,
 				& a {
 					font-size: rem-calc( 18px );
-					@extend .font-helveticaneue-light;
+					font-family: "helveticaneuecyrlight";
 					color: #000;
 				}
 			}
@@ -51,7 +51,7 @@
 				&,
 				& p {
 					font-size: rem-calc( 13px );
-					@extend .font-helveticaneue-light;
+					font-family: "helveticaneuecyrlight";
 					color: $gray-color;
 				}
 			}

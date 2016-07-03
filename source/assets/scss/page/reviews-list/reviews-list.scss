@@ -6,7 +6,7 @@
 			color: $gray-color;
 			font-size: rem-calc( 30px );
 			line-height: 1.5;
-			@extend .font-helveticaneue-light;
+			font-family: "helveticaneuecyrlight";
 		}
 		& {
 			margin-bottom: rem-calc( 46px );
@@ -39,7 +39,7 @@
 			& p {
 				margin: 0px;
 				font-size: rem-calc( 18px );
-				@extend .font-helveticaneue-light;
+				font-family: "helveticaneuecyrlight";
 			}
 			& {
 				margin-right: rem-calc( 30px );
@@ -107,7 +107,7 @@
 			&,
 			& p {
 				font-size: rem-calc( 23px );
-				@extend .font-helveticaneue-light;
+				font-family: "helveticaneuecyrlight";
 				line-height: 1.25;
 			}
 			& {
