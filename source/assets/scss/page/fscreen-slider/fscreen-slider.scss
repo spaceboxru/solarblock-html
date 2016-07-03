@@ -55,6 +55,24 @@
 	&-slider ul {
 		width: 520px;
 	}
+	&--sm {
+		.fscreen-slider,
+		.fscreen-slider ul,
+		.fscreen-thumbs {
+			height: 270px;
+		}
+		.fscreen-slider,
+		.fscreen-slider ul {
+			width: 360px;
+		}
+		.fscreen-slider {
+			&-inner {
+				&>ul {
+					padding-bottom: 270px;
+				}
+			}
+		}
+	}
 	&-slider {
 		position: relative;
 		&-inner {

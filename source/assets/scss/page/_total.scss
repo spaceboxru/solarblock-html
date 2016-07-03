@@ -40,6 +40,25 @@ svg {
 	display: block;
 }
 
+.info {
+	background-color: #b1c4cb;
+	color: white;
+	width: 16px;
+	height: 16px;
+	line-height: 1.1;
+	text-align: center;
+	display: inline-block;
+	border-radius: 50%;
+	&:after {
+		content: "i";
+		font-family: georgia, serif;
+		font-size: 10px;
+		font-weight: 700;
+		font-style: italic;
+		display: inline-block;
+	}
+}
+
 .qtip {
 	.qtip-content {
 		padding-right: rem-calc(35px);

@@ -57,8 +57,8 @@ label {
 		padding: rem-calc( 8px ) rem-calc( 12px );
 		&:hover {
 			background: transparent;
-			border-color: #d33;
-			color: #d33;
+			border-color: $red;
+			color: $red;
 		}
 		.icons {
 			&.icons--svg {
@@ -84,6 +84,18 @@ label {
 		}
 		&:active {
 			background: darken($dkblue, 5%);
+		}
+	}
+	&.button--red {
+		background: $red;
+		border-color: $red;
+		font-family: "helveticaneuecyrmedium";
+		color: #fff;
+		&:hover {
+			background: lighten($red, 5%);
+		}
+		&:active {
+			background: darken($red, 5%);
 		}
 	}
 	&.button--100 {

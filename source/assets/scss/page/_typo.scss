@@ -209,3 +209,11 @@ h6,.h6 {
     color: #000;
     @extend .font-helveticaneue-bold;
 }
+a {
+	.decorate {
+		border-bottom: 1px solid;
+	}
+	&:hover {
+		border-bottom-color: transparent;
+	}
+}
