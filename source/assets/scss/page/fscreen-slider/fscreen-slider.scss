@@ -371,7 +371,9 @@
 
 /* [Mob Top Menu] */
 @include breakpoint(medium down) {
+	
 	.fscreen {
+		
 		padding-bottom: 70px;
 		margin-bottom: 20px;
 		border-bottom: 1px dashed #ccc;
@@ -459,6 +461,27 @@
 		&-fullscreen {
 			top: 5px;
 			right: 5px;
+		}
+		&--sm {
+			&.fscreen,
+			.fscreen-slider,
+			.fscreen-slider ul {
+				width: 360px;
+			}
+			.fscreen-thumbs {
+				height: 360px;
+				left: 170px;
+				top: 100px;
+			}
+			.fscreen-slider,
+			.fscreen-slider ul {
+				height: 250px;
+			}
+			.fscreen-slider-inner {
+				&> ul {
+					padding-bottom: 250px;
+				}
+			}
 		}
 	}
 }

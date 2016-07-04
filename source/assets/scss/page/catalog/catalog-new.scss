@@ -11,7 +11,7 @@
 		background-color: #eef3f5;
 		margin: 0px -40px 40px;
 		&__form {
-			padding: 25px 40px 50px;
+			padding: 25px 40px 37px;
 			input[type='text'] {
 				padding-left: 30px;
 			}
@@ -22,9 +22,13 @@
 			}
 			&-button {
 				line-height: 1.1;
+				margin-right: 13px;
+				margin-bottom: 13px;
+				/*
 				& + .catalog-new__filter__form-button {
-					margin-left: 13px;
+					margin-right: 13px;
 				}
+				*/
 				input[type='checkbox'] {
 					display: none;
 				}
@@ -63,6 +67,22 @@
 /* [Mob Top Menu] */
 @include breakpoint(medium down) {
 
+	.catalog-new {
+		padding-left: 20px;
+		padding-right: 20px;
+		&__filter {
+			margin-left: -20px;
+			margin-right: -20px;
+			padding-left: 0px;
+			padding-right: 0px;
+			&__form {
+				padding: 25px 20px 37px;
+				.form-control {
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
 
 }
 /* [/Mob Top Menu] */

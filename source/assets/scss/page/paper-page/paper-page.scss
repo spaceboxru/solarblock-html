@@ -36,3 +36,13 @@
 		}
 	}
 }
+
+/* [Mob Top Menu] */
+@include breakpoint(medium down) {
+
+	.paper__page {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+}

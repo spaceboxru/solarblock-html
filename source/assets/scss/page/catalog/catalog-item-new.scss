@@ -92,12 +92,18 @@
 		font-size: rem-calc(14px);
 		line-height: 1.45;
 		display: table;
+		margin-bottom: 20px;
 	}
 }
 
 /* [Mob Top Menu] */
 @include breakpoint(medium down) {
 
-	
+	.catalog-item-new {
+		&__content {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
 
 }

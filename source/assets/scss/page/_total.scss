@@ -475,8 +475,17 @@ $class-mright: m-r- !default;
 $class-mleft: m-l- !default;
 $class-mtop: m-t- !default;
 $class-mbottom: m-b- !default;
-$class-mbottomsm: m-b-sm- !default;
+
 $class-mtopsm: m-t-sm- !default;
+$class-mrightsm: m-r-sm- !default;
+$class-mleftsm: m-l-sm- !default;
+$class-mbottomsm: m-b-sm- !default;
+
+$class-ptopsm: p-t-sm- !default;
+$class-prightsm: p-r-sm- !default;
+$class-pbottomsm: p-b-sm- !default;
+$class-pleftsm: p-l-sm- !default;
+
 @for $i from 0 through 20 {
 	.#{$class-mright}#{$i*5} {
 		margin-right:$i*5px!important;
@@ -496,15 +505,32 @@ $class-mtopsm: m-t-sm- !default;
 @include breakpoint(medium down) {
 
 	@for $i from 0 through 20 {
+		.#{$class-mtopsm}#{$i*5} {
+			margin-top:$i*5px!important;
+		}	
+		.#{$class-mrightsm}#{$i*5} {
+			margin-right:$i*5px!important;
+		}
 		.#{$class-mbottomsm}#{$i*5} {
 			margin-bottom:$i*5px!important;
 		}
-		.#{$class-mtopsm}#{$i*5} {
-			margin-top:$i*5px!important;
+		.#{$class-mleftsm}#{$i*5} {
+			margin-left:$i*5px!important;
+		}
+		
+		.#{$class-ptopsm}#{$i*5} {
+			padding-top:$i*5px!important;
 		}
 		.#{$class-prightsm}#{$i*5} {
 			padding-right:$i*5px!important;
 		}
+		.#{$class-pbottomsm}#{$i*5} {
+			padding-bottom:$i*5px!important;
+		}
+		.#{$class-pleftsm}#{$i*5} {
+			padding-left:$i*5px!important;
+		}
+		
 	}
 
 	.hline {
