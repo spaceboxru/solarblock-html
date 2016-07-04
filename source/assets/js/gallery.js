@@ -218,9 +218,15 @@ jQuery.fn.fsizeGallery = function( options ) {
 			if((slidesLen - maxElementViews) > 0) {
 				var delta = ($win.width() < 1024) ? Math.floor($thumbsPaneH / Math.abs($thumbsPane.offset().left - $thumbs.eq(next).offset().left)) : Math.floor($thumbsPaneH / Math.abs($thumbsPane.offset().top - $thumbs.eq(next).offset().top)),
 					marginTop = Math.abs(parseInt($thumbsPane.find('ul').css('margin-top')));
+				
 				marginTop = marginTop > 0? marginTop : next ;
+
 				thumbsTop = (delta < 2)? ( ((marginTop / thumbsH + 1)  <= (slidesLen - maxElementViews)) ? thumbsTop - thumbsH : thumbsTop) : thumbsTop + thumbsH ;
-				thumbsTop = (thumbsTop > 0)? 0: thumbsTop ;
+				
+				thumbsTop = (next != prev && next == (slidesLen - 1))? -1 * (slidesLen - maxElementViews) * thumbsH : thumbsTop ;
+				
+				thumbsTop = (thumbsTop > 0 || next == 0)? 0: thumbsTop ;
+				
 				$thumbsPane
 					.find('ul')
 					.delay(settings.animationDuration / 6)
