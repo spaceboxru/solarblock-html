@@ -213,7 +213,13 @@ a {
 	.decorate {
 		border-bottom: 1px solid;
 	}
+	&:focus {
+		text-decoration: none;
+	}
 	&:hover {
-		border-bottom-color: transparent;
+		color: $red;
+		.decorate {
+			/*border-bottom-color: transparent;*/
+		}
 	}
 }

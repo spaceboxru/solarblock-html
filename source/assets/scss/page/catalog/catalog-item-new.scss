@@ -1,4 +1,10 @@
 .catalog-item-new {
+	.loader {
+		&:before {
+			margin-left: -30px;
+			margin-right: -30px;
+		}
+	}
 	&__title {
 		font-size: rem-calc(35px);
 		line-height: 1.28;
@@ -12,6 +18,9 @@
 	}
 	&__anons {
 		font-size: rem-calc(18px);
+		&-second {
+			font-size: rem-calc(16px);
+		}
 	}
 	&__content {
 		font-size: rem-calc(14px);

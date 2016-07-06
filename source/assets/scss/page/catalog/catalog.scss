@@ -400,18 +400,20 @@
 			@extend .font-helveticaneue-medium;
 			text-decoration: underline;
 			color: $base-color;
-			&:hover {
+			&:hover,
+			&:focus	{
 				text-decoration: none;
-				color: $base-color;
+				color: $red;
 			}
 			&-bold {
 				font-size: rem-calc( 22px );
 				@extend .font-helveticaneue-bold;
 				display: inline-block;
 				margin-top: -5px;
-				&,
-				&:hover {
-					color: $base-color;
+				color: $base-color;
+				&:hover,
+				&:focus	{
+					color: $red;
 				}
 			}
 		}

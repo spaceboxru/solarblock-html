@@ -24,6 +24,9 @@ label {
 		height: 35px;
 		margin: 0px;
 	}
+	&.error {
+		border-color: $red;
+	}
 }
 .inputtextarea {
 	height: 136px;

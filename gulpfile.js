@@ -9,7 +9,7 @@ var sherpa      = require('style-sherpa');
 var spritesmith = require('gulp.spritesmith');
 
 // Check for --production flag
-var isProduction = !!(argv.production);
+var isProduction = !!!(argv.production);
 
 // Port to use for the development server.
 var PORT = 8000;
@@ -54,6 +54,7 @@ var PATHS = {
     //'bower_components/foundation-sites/js/foundation.tooltip.js',
 
 	'source/assets/js/vendor/qtip/jquery.qtip.js',
+	'bower_components/jquery-validation/dist/jquery.validate.js'
 	
   ],
   javascriptapp: [
@@ -159,7 +160,11 @@ gulp.task('sass', function() {
 	  new RegExp('^\.inputtextarea.*'),
 	  new RegExp('^\.sample-works.*'),
 	  new RegExp('^\.show-.*'),
-	  new RegExp('^\.is-active.*')
+	  new RegExp('^\.hide-.*'),
+	  new RegExp('^\.is-active.*'),
+	  new RegExp('^\.loader.*'),
+	  new RegExp('^\.fscreen.*'),
+	  new RegExp('.*error.*')
     ]
   }));
 
