@@ -131,9 +131,10 @@ jQuery(function($) {
 
 		var $jsCatalogItemBrand = $('#js-catalog-item-brand');
 			$jsCatalogItem = $('.js-catalog-item-brand'),
-			$jsCatalogItemForm = $('.js-catalog-item-order'),
-			$checkboxes = $jsCatalogItemForm.find("input[id^='checkbox-']"),
-			$submitBtns = $jsCatalogItemForm.find("input[type='submit'],button[type='submit']");
+			$jsCatalogItemOrder = $('.js-catalog-item-order'),
+			$jsCatalogItemForm = $jsCatalogItemOrder.find('form'),
+			$checkboxes = $jsCatalogItemOrder.find("input[id^='checkbox-']"),
+			$submitBtns = $jsCatalogItemOrder.find("input[type='submit'],button[type='submit']");
 
 			$jsCatalogItem.on('change', function(e) {
 				var $this = $(this),
@@ -145,7 +146,7 @@ jQuery(function($) {
 					$jsCatalogItemBrand.val(targetVal.replace(val, ''));
 				}
 			});
-			console.log($checkboxes);
+			
 			$submitBtns.on('mousedown mouseup', function() {
 				var index = $submitBtns.index($(this));
 				$checkboxes
@@ -160,7 +161,7 @@ jQuery(function($) {
 			$jsCatalogItemForm.on('submit', function(e) {
 				e.preventDefault();
 				var $this = $(this),
-					$replace = $this.find('.js-ajax-replacement');
+					$replace = $this.parent('.js-ajax-replacement');
 				if($this.valid()) {
 					$this.addClass('loader');
 					$.ajax({
@@ -168,9 +169,11 @@ jQuery(function($) {
 						url: $this.attr('action'),
 						data: $this.serialize(), // serializes the form's elements.
 						success: function(data) {
-						   var $replacement = $(data).find('.js-ajax-replacement');
-						   $replace.replaceWith($replacement);
-						   $this.removeClass('loader');
+							var $replacement = $(data).find('.js-ajax-replacement');
+							//$replace.replaceWith($replacement);
+							$replace.replaceWith('');
+							$('.js-ajax-replacement-target').replaceWith($replacement);
+							$this.removeClass('loader');
 						}
 					});
 				}
