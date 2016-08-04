@@ -164,7 +164,9 @@ gulp.task('sass', function() {
 	  new RegExp('^\.is-active.*'),
 	  new RegExp('^\.loader.*'),
 	  new RegExp('^\.fscreen.*'),
-	  new RegExp('.*error.*')
+	  new RegExp('.*error.*'),
+	  new RegExp('.*max-width-none.*'),
+	  new RegExp('^\.qtip.*'),
     ]
   }));
 
