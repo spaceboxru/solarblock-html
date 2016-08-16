@@ -3,6 +3,58 @@ $(document).foundation();
 
 jQuery(function($) {
 
+	/**
+	* Plugin Isolate scroll
+	*/
+	$.fn.isolatedScroll = function() {
+		this.bind('mousewheel DOMMouseScroll', function (e) {
+			var delta = e.wheelDelta || (e.originalEvent && e.originalEvent.wheelDelta) || -e.detail,
+				bottomOverflow = this.scrollTop + $(this).outerHeight() - this.scrollHeight >= 0,
+				topOverflow = this.scrollTop <= 0;
+
+			if ((delta < 0 && bottomOverflow) || (delta > 0 && topOverflow)) {
+				e.preventDefault();
+			}
+		});
+		return this;
+	};
+
+	/**
+	* Fix menu onscroll page
+	*/
+	$.fn.fixMenuOnScroll = function() {
+		var $win = $win || $(window),
+			$doc = $doc || $(document),
+			$body = $('body'),
+			$this = this,
+			topPosLast = 0,
+			topPos = 0,
+			thisH = $this.height();
+		$win
+			.on('resize', function() {
+				thisH = $this.height();
+				$body.css({
+					'padding-top': thisH
+				});
+			});
+		$doc
+			.on('scroll', function(e) {
+				topPos = $win.scrollTop();
+				if(topPos > thisH) {
+					$this.addClass('fixed');
+				} else {
+					$this.removeClass('fixed');
+				}
+				if(topPos > topPosLast) {
+					$this.addClass('hidden');
+				} else {
+					$this.removeClass('hidden');
+				}
+				topPosLast = topPos;
+			});
+		return this;
+	};
+
 	// Grab all elements with the class "hasTooltip"
 	$('.qtip-tip').each(function() { // Notice the .each() loop, discussed below
 		var $this = $(this);
@@ -114,7 +166,7 @@ jQuery(function($) {
 	*/
 	(function() {
 		
-		$('form.js-form-validate').each(function() {
+		$('form.js-form-validate,.js-form-validate form').each(function() {
 			$(this).validate({
 				errorPlacement: function(error,element) {
 					return true;
@@ -180,6 +232,16 @@ jQuery(function($) {
 			});
 		
 	}());
+	
+	/**
+	* Fix menu onscroll page
+	*/
+	(function() {
+		$('.js-fix-menu')
+			.fixMenuOnScroll()
+			.isolatedScroll();
+	}());
+	
 	
 });
 

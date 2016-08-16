@@ -3,6 +3,7 @@
 .mounting-order {
 	background: transparent url(../img/index-bg/index-top-bg.jpg) no-repeat 45% 0%;
 	&__title {
+		margin-top: 80px;
 		font-size: 35px;
 		line-height: 1.15;
 	}
@@ -627,6 +628,51 @@
 
 /* [Mob Top Menu] */
 @include breakpoint(medium down) {
+
+	.mounting-order {
+		&__title {
+			font-size: rem-calc(25px);
+			margin-top: 25px;
+		}
+		&__prop,
+		&__anons {
+			max-width: 100%;
+		}
+		&__form {
+			margin-bottom: 30px;
+		}
+		&__prop {
+			&__title {
+				p {
+					margin-bottom: 20px;
+				}
+			}
+		}
+		&__price {
+			&__num {
+				font-size: 2.625rem;
+				margin-top: -5px;
+			}
+		}
+	}
+	
+	.mounting-price {
+		&__title {
+			font-size: 1.6875rem;
+			margin-bottom: 13px;
+		}
+		&__table {
+			tr {
+				td:first-child,
+				th:first-child {
+					width: 30%;
+				}
+			}
+		}
+		&__anons {
+			margin-bottom: 35px;
+		}
+	}
 
 	.advantages {
 		

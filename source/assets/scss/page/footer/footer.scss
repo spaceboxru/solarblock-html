@@ -106,8 +106,14 @@
 					margin: rem-calc( 0px 8px );
 				}
 			}	
-
+		}
+		.header__search{
+			&-input {
+				margin: 30px 0px 0px;
+			}
+			&-btn {
+				left: 10px;
+			}
 		}
 	}
-
 }

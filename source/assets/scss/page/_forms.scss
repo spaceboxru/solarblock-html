@@ -135,3 +135,13 @@ label {
 	}
 	
 }
+
+/* [Mob Top Menu] */
+@include breakpoint(medium down) {
+	.button {
+		&.button--lg {
+			height: 50px;
+			line-height: 26px;
+		}
+	}
+}

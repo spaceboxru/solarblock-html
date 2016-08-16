@@ -505,9 +505,14 @@ $class-pleftsm: p-l-sm- !default;
 	}
 
 }
+
 /* [Mob Top Menu] */
 @include breakpoint(medium down) {
-
+	
+	body {
+		padding-top: 50px;
+	}
+	
 	@for $i from 0 through 20 {
 		.#{$class-mtopsm}#{$i*5} {
 			margin-top:$i*5px!important;
@@ -623,3 +628,51 @@ $class-pleftsm: p-l-sm- !default;
 	}
 
 }
+
+/* [ Align classes ] */
+@include breakpoint(large down) {
+	.large-text-left {
+		text-align: left!important;
+	}
+	.large-text-right {
+		text-align: right!important;
+	}
+	.large-text-center {
+		text-align: center!important;
+	}
+	.large-text-justify {
+		text-align: justify!important;
+	}
+}
+@include breakpoint(medium down) {
+	.medium-text-left {
+		text-align: left!important;
+	}
+	.medium-text-right {
+		text-align: right!important;
+	}
+	.medium-text-center {
+		text-align: center!important;
+	}
+	.medium-text-justify {
+		text-align: justify!important;
+	}
+}
+@include breakpoint(small down) {
+	.small-text-left {
+		text-align: left!important;
+	}
+	.small-text-right {
+		text-align: right!important;
+	}
+	.small-text-center {
+		text-align: center!important;
+	}
+	.small-text-justify {
+		text-align: justify!important;
+	}
+}
+/* [ /Align classes ] */
+
+
+

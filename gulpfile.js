@@ -165,8 +165,14 @@ gulp.task('sass', function() {
 	  new RegExp('^\.loader.*'),
 	  new RegExp('^\.fscreen.*'),
 	  new RegExp('.*error.*'),
+	  new RegExp('.*open.*'),
+	  new RegExp('.*fixed.*'),
+	  new RegExp('.*hidden.*'),
+	  new RegExp('^\.mobtop-menu.*'),
 	  new RegExp('.*max-width-none.*'),
 	  new RegExp('^\.qtip.*'),
+	  new RegExp('^\.rub.*'),
+	  new RegExp('^\.js-.*'),
     ]
   }));
 

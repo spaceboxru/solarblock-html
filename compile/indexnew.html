@@ -174,7 +174,7 @@
     <!-- [For Mobile Only] -->
     <header class="header page--line show-for-small hide-for-large">
     	
-    	<div class="title-bar mobtop-menu" data-responsive-toggle="mobtop-menu" data-hide-for="large">
+    	<div class="title-bar mobtop-menu js-fix-menu" data-responsive-toggle="mobtop-menu" data-hide-for="large">
     		<div class="row">
     			<div class="small-8 columns">
     				<button class="menu-icon mobtop-menu__btn js-mobtop-menu__btn" type="button" data-toggle>
@@ -262,21 +262,22 @@
 
       
       <!-- [Заказ монтажа] -->
-      <div class="mounting-order">
+      <div class="mounting-order page--line">
       	<div class="row">
       		<div class="small-48 column">
       			
-      			<h1 class="mounting-order__title m-t-80">
+      			<h1 class="mounting-order__title">
       				Монтаж
-      				<br />
+      				<br class="hide-for-small-only" />
       				солнцезащитной
-      				<br />
+      				<br class="hide-for-small-only" />
       				пленки
       			</h1>
+      			
       			<div class="row">
-      				<div class="small-36 column">
+      				<div class="small-48 medium-36 column">
       					<div class="row">
-      						<div class="small-27 column">
+      						<div class="medium-27 small-48 column">
       							
       							<div class="mounting-order__price clearfix">
       								<strong class="mounting-order__price__num">
@@ -288,80 +289,18 @@
       							</div>
       							
       						</div>
-      						<div class="small-21 column">
+      						<div class="small-21 column hide-for-small-only">
       							&nbsp;
       						</div>
       					</div>
       				</div>
-      				<div class="small-12 column">
+      				<div class="small-12 column hide-for-small-only">
       					<hr class="hline hline--blue m-t-95" />
       				</div>
       			</div>
       			<div class="row">
-      				<div class="small-36 column">
-      					<div class="row">
-      						<div class="small-27 column">
-      							
-      							<div class="mounting-order__prop">
-      								
-      								<div class="mounting-order__prop__title">
-      									<p>
-      										В стоимость монтажа
-      										<br />
-      										солнцезащитной пленки входит:
-      									</p>
-      								</div>
-      								
-      								<div class="row">
-      									<div class="small-16 column">
-      										<i class="icons icons--box mounting-order__prop-icon"></i>
-      										<p>
-      											цена пленки
-      											<br />
-      											и ее доставка
-      											<br />
-      											на объект
-      										</p>
-      									</div>
-      									<div class="small-16 column">
-      										<i class="icons icons--install m-b-25 mounting-order__prop-icon"></i>
-      										<p>
-      											работа
-      											<br />
-      											по монтажу
-      											<br />
-      											пленки 
-      										</p>
-      									</div>
-      									<div class="small-16 column">
-      										<i class="icons icons--trash m-b-25 mounting-order__prop-icon"></i>
-      										<p>
-      											уборка
-      											<br />
-      											мусора
-      										</p>
-      									</div>
-      								</div>
-      							</div>
-      							
-      						</div>
-      						<div class="small-21 column">
-      							
-      							<div class="mounting-order__anons">
-      								<p>
-      									Если вы еще не выбрали пленку,
-      									то наш менеджер готов бесплатно
-      									к вам выехать с каталогом пленки. Вы сможете выбрать пленку на основе образцов, а  менеджер измерит объект и подготовит для вас подробную смету.
-      								</p>
-      								<a class="readmore" href="#">
-      									<i class="icons icons--readmore m-r-10"></i><span class="decorate">Заказать вызов менеджера</span>
-      								</a>
-      							</div>
-      							
-      						</div>
-      					</div>
-      				</div>
-      				<div class="small-12 column">
+      			
+      				<div class="small-48 medium-12 medium-push-36 column">
       					
       					<form class="mounting-order__form" action="#">
       						
@@ -381,6 +320,71 @@
       					</form>
       					
       				</div>
+      			
+      				<div class="small-48 medium-36 medium-pull-12 column">
+      					<div class="row">
+      						<div class="small-48 medium-27 column">
+      							
+      							<div class="mounting-order__prop">
+      								
+      								<div class="mounting-order__prop__title">
+      									<p>
+      										В стоимость монтажа
+      										<br class="hide-for-small-only" />
+      										солнцезащитной пленки входит:
+      									</p>
+      								</div>
+      								
+      								<div class="row">
+      									<div class="small-16 column small-text-center">
+      										<i class="icons icons--box mounting-order__prop-icon"></i>
+      										<p>
+      											цена пленки
+      											<br />
+      											и ее доставка
+      											<br />
+      											на объект
+      										</p>
+      									</div>
+      									<div class="small-16 column small-text-center">
+      										<i class="icons icons--install m-b-25 mounting-order__prop-icon"></i>
+      										<p>
+      											работа
+      											<br />
+      											по монтажу
+      											<br />
+      											пленки 
+      										</p>
+      									</div>
+      									<div class="small-16 column small-text-center">
+      										<i class="icons icons--trash m-b-25 mounting-order__prop-icon"></i>
+      										<p>
+      											уборка
+      											<br />
+      											мусора
+      										</p>
+      									</div>
+      								</div>
+      							</div>
+      							
+      						</div>
+      						<div class="small-48 medium-21 column">
+      							
+      							<div class="mounting-order__anons">
+      								<p>
+      									Если вы еще не выбрали пленку,
+      									то наш менеджер готов бесплатно
+      									к вам выехать с каталогом пленки. Вы сможете выбрать пленку на основе образцов, а  менеджер измерит объект и подготовит для вас подробную смету.
+      								</p>
+      								<a class="readmore" href="#">
+      									<i class="icons icons--readmore m-r-10"></i><span class="decorate">Заказать вызов менеджера</span>
+      								</a>
+      							</div>
+      							
+      						</div>
+      					</div>
+      				</div>
+      
       			</div>
       		</div>
       	</div>
@@ -389,12 +393,12 @@
       
       <div class="row">
       	<div class="small-48 column">
-      		<hr class="hline m-t-45 m-b-55" />
+      		<hr class="hline m-t-45 m-b-55 m-t-sm-35 m-b-sm-30" />
       	</div>
       </div>
       
       <!-- [Стоимость монтажа] -->
-      <div class="mounting-price">
+      <div class="mounting-price page--line">
       	<div class="row">
       		<div class="small-48 column">
       			

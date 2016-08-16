@@ -10,7 +10,7 @@
 			background: white;
 			padding: 42px 30px 55px;
 			position: relative;
-			z-index: 100;
+			z-index: 10;
 			box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.12);
 		}
 		&:before,
@@ -20,7 +20,7 @@
 			background: white;
 			right: 7px;
 			left: 7px;
-			z-index: 10;
+			z-index: 1;
 		}
 		&:before {
 			top: -6px;
@@ -41,8 +41,11 @@
 @include breakpoint(medium down) {
 
 	.paper__page {
-		margin-left: 10px;
-		margin-right: 10px;
+		margin-left: -10px;
+		margin-right: -10px;
+		&-in {
+			padding: 22px 10px 35px 10px;
+		}
 	}
 
 }

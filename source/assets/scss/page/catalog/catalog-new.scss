@@ -2,7 +2,8 @@
 .catalog-new {
 	&__title {
 		@extend .mounting-price__title;
-		margin-bottom: 35px;
+		// margin-bottom: 35px;
+		margin-bottom: rem-calc(20px);
 	}
 	&__subtitle {
 		@extend .mounting-price__subtitle;
@@ -11,7 +12,8 @@
 		background-color: #eef3f5;
 		margin: 0px -40px 40px;
 		&__form {
-			padding: 25px 40px 37px;
+			// padding: 25px 40px 37px;
+			padding: 20px 40px 20px;
 			input[type='text'] {
 				padding-left: 30px;
 			}
