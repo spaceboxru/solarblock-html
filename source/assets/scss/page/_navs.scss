@@ -31,6 +31,9 @@
 		&> li:not(.menu-text) {
 			&> a {
 				padding: 24px 39px 26px;
+				&.active {
+					padding-top: 21px;
+				}
 			}
 		}
 	}

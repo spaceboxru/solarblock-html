@@ -34,6 +34,15 @@
 			top: -18px;
 		}
 	}
+	&.qtip-pos-tr {
+		margin: rem-calc( 20px -20px 0px 0px);
+		&:after {
+			border-color: transparent transparent #fff;
+			top: -18px;
+			left: auto;
+			right: 22px;
+		}
+	}
 	&.qtip-pos-bl {
 		margin: rem-calc( -20px 0px 0px -20px);
 		&:after {
@@ -41,6 +50,17 @@
 			bottom: -18px;
 		}
 	}
+	&.qtip-pos-br {
+		margin: rem-calc( -20px -20px 0px 0px);
+
+		&:after {
+			border-color: #fff transparent transparent;
+			bottom: -18px;
+			left: auto;
+			right: 22px;
+		}
+	}
+	
 	&-default {
 		background: #fff;
 		border: 0px none;

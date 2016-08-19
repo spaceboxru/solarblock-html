@@ -28,6 +28,9 @@
 	}
 	&__table {
 		margin: 0px -10px 20px;
+		.qtip-titlebar {
+			right: 0px;
+		}
 		&-header {
 			background: #eef1f2;
 			color: $midgray-color;
@@ -71,6 +74,8 @@
 			border-bottom: 1px solid #eef1f2;
 			input[type="checkbox"] {
 				margin-bottom: 0px;
+				margin-top: -1px;
+				vertical-align: top;
 				&:checked {
 					& + .catalog-item-new__table-row-bg {
 						content: "";
@@ -86,9 +91,12 @@
 					}
 				}
 			}
-			.columns * {
-				position: relative;
-				z-index: 10;
+			.columns {
+				&>a,
+				&>span {
+					position: relative;
+					z-index: 10;
+				}
 			}
 		}
 	}
@@ -110,6 +118,10 @@
 
 	.catalog-item-new {
 		&__content {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		&__colorform {
 			padding-left: 10px;
 			padding-right: 10px;
 		}

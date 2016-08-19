@@ -80,7 +80,10 @@ svg {
 		}
 	}
 }
-
+.has-tip {
+	border-bottom: dotted 1px $ltgray-color;
+	cursor: pointer;
+}
 .loader {
 	position: relative;
 	&:before {
@@ -541,6 +544,14 @@ $class-pleftsm: p-l-sm- !default;
 		}
 		
 	}
+	@for $i from 0 through 6 {
+		.#{$class-mrightsm}-#{$i*5} {
+			margin-right:-1*$i*5px!important;
+		}
+		.#{$class-mleftsm}-#{$i*5} {
+			margin-left:-1*$i*5px!important;
+		}
+	}
 
 	.hline {
 		max-width: 100%;
@@ -626,7 +637,11 @@ $class-pleftsm: p-l-sm- !default;
 			}
 		}
 	}
-
+	
+	.sm-rotate-90 {
+		transform: rotate(-90deg);
+	}
+	
 }
 
 /* [ Align classes ] */
